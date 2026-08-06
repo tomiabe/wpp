@@ -58,6 +58,17 @@
     }
   }
 
+  var storySlides = document.querySelectorAll(".story__media-slide");
+  if (storySlides.length > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var storyIndex = 0;
+    window.setInterval(function () {
+      storySlides.forEach(function (slide, i) {
+        slide.classList.toggle("is-active", i === (storyIndex + 1) % storySlides.length);
+      });
+      storyIndex = (storyIndex + 1) % storySlides.length;
+    }, 5000);
+  }
+
   var pills = document.querySelectorAll(".filter-pill");
   var cards = document.querySelectorAll("#flavor-grid .flavor-card");
 

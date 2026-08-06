@@ -334,7 +334,7 @@ img {
 }
 
 .header__brand img {
-  width: 130px;
+  width: 100px;
   height: auto;
 }
 
@@ -465,13 +465,6 @@ img {
   margin-top: 34px;
 }
 
-.hero__chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 36px;
-}
-
 /* ---------- Trust bar ---------- */
 
 .trust {
@@ -586,13 +579,13 @@ img {
 
 .filter-pill {
   padding: 10px 20px;
-  border: var(--border-w) solid var(--ink);
+  border: var(--border-w) solid var(--purple);
   border-radius: 999px;
   background: var(--white);
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 0.95rem;
-  color: var(--ink);
+  color: var(--purple);
   cursor: pointer;
   transition: background-color 0.12s ease, transform 0.12s ease;
 }
@@ -755,6 +748,20 @@ img {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
   width: 100%;
+}
+
+.story__media-slide {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.story__media-slide.is-active {
+  opacity: 1;
+}
+
+.story__media {
+  display: grid;
 }
 
 .story__body h2 {
@@ -1053,7 +1060,7 @@ img {
 }
 
 .footer__brand img {
-  width: 130px;
+  width: 100px;
   height: auto;
   margin-bottom: 14px;
 }
