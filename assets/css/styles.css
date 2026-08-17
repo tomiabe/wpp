@@ -1345,10 +1345,29 @@ img {
 .order-overlay__bar {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 12px 20px;
   background: var(--purple);
   flex-shrink: 0;
+}
+
+.order-overlay__newtab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.order-overlay__newtab:hover,
+.order-overlay__newtab:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .order-overlay__close {

@@ -143,18 +143,31 @@
   var overlayFrame = document.getElementById("order-overlay-frame");
   var overlayClose = document.getElementById("order-overlay-close");
   var overlayLoading = document.getElementById("order-overlay-loading");
-  var overlayFallback = document.getElementById("order-overlay-fallback");
   var orderSrc = "https://whatspoppinpopcorn.zenfoody.com";
-  var loadTimer = null;
+  var frameReady = false;
+  var revealTimer = null;
+
+  function revealOrder() {
+    if (revealTimer) {
+      window.clearTimeout(revealTimer);
+      revealTimer = null;
+    }
+    if (overlayLoading) overlayLoading.classList.add("is-hidden");
+    if (overlayFrame) overlayFrame.classList.add("is-loaded");
+  }
 
   function openOrder(e) {
     e.preventDefault();
     if (!overlay) return;
-    if (!overlayFrame.src || overlayFrame.src === "about:blank") {
+    if (!frameReady) {
+      frameReady = true;
       overlayFrame.src = orderSrc;
-      loadTimer = window.setTimeout(function () {
-        if (overlayFallback) overlayFallback.hidden = false;
-      }, 8000);
+      // Zenfoody loads many third-party resources and its "load" event can
+      // take a long time (or never fire), so reveal the embedded app on a
+      // short fixed delay as well as on load.
+      revealTimer = window.setTimeout(revealOrder, 3000);
+    } else {
+      revealOrder();
     }
     overlay.hidden = false;
     document.body.classList.add("overlay-open");
@@ -168,11 +181,7 @@
   }
 
   if (overlayFrame) {
-    overlayFrame.addEventListener("load", function () {
-      if (loadTimer) window.clearTimeout(loadTimer);
-      if (overlayLoading) overlayLoading.classList.add("is-hidden");
-      overlayFrame.classList.add("is-loaded");
-    });
+    overlayFrame.addEventListener("load", revealOrder);
   }
 
   document.querySelectorAll(".open-order").forEach(function (link) {
