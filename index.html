@@ -919,7 +919,15 @@
         Close
       </button>
     </div>
-    <iframe class="order-overlay__frame" id="order-overlay-frame" src="" title="Order online" loading="lazy"></iframe>
+    <div class="order-overlay__loading" id="order-overlay-loading">
+      <img src="assets/img/logo.webp" alt="" width="120" height="80">
+      <p>Loading ordering&hellip;</p>
+      <a class="btn btn--yellow btn--sm" id="order-overlay-fallback" href="https://whatspoppinpopcorn.zenfoody.com/" target="_blank" rel="noopener" hidden>
+        Open in new tab
+        <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <iframe class="order-overlay__frame" id="order-overlay-frame" src="" title="Order online" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="payment; fullscreen"></iframe>
   </div>
 
   <script src="assets/js/main.js"></script>

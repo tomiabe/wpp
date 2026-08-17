@@ -1373,10 +1373,46 @@ img {
   color: var(--purple);
 }
 
+.order-overlay__loading {
+  position: absolute;
+  inset: 0;
+  top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: var(--white);
+  z-index: 1;
+  transition: opacity 0.3s;
+}
+
+.order-overlay__loading.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.order-overlay__loading img {
+  width: 120px;
+  height: auto;
+}
+
+.order-overlay__loading p {
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+}
+
 .order-overlay__frame {
   flex: 1;
   width: 100%;
   border: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.order-overlay__frame.is-loaded {
+  opacity: 1;
 }
 
 body.overlay-open {
