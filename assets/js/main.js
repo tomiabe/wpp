@@ -138,6 +138,46 @@
     });
   }
 
+  /* ---- Order overlay ---- */
+  var overlay = document.getElementById("order-overlay");
+  var overlayFrame = document.getElementById("order-overlay-frame");
+  var overlayClose = document.getElementById("order-overlay-close");
+  var orderSrc = "https://whatspoppinpopcorn.zenfoody.com/ui";
+
+  function openOrder(e) {
+    e.preventDefault();
+    if (!overlay) return;
+    if (!overlayFrame.src || overlayFrame.src === "about:blank") {
+      overlayFrame.src = orderSrc;
+    }
+    overlay.hidden = false;
+    document.body.classList.add("overlay-open");
+    overlayClose.focus();
+  }
+
+  function closeOrder() {
+    if (!overlay) return;
+    overlay.hidden = true;
+    document.body.classList.remove("overlay-open");
+  }
+
+  document.querySelectorAll(".open-order").forEach(function (link) {
+    link.addEventListener("click", openOrder);
+  });
+
+  if (overlayClose) {
+    overlayClose.addEventListener("click", closeOrder);
+  }
+
+  if (overlay) {
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) closeOrder();
+    });
+    overlay.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeOrder();
+    });
+  }
+
   var form = document.getElementById("event-form");
   var status = document.getElementById("form-status");
   if (form && status) {

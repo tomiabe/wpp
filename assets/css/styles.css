@@ -1327,3 +1327,58 @@ img {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* ---- Order overlay ---- */
+.order-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+}
+
+.order-overlay[hidden] {
+  display: none;
+}
+
+.order-overlay__bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 20px;
+  background: var(--purple);
+  flex-shrink: 0;
+}
+
+.order-overlay__close {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 2px solid var(--white);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.order-overlay__close:hover,
+.order-overlay__close:focus-visible {
+  background: var(--white);
+  color: var(--purple);
+}
+
+.order-overlay__frame {
+  flex: 1;
+  width: 100%;
+  border: none;
+}
+
+body.overlay-open {
+  overflow: hidden;
+}
