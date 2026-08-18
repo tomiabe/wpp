@@ -151,6 +151,27 @@
 
   if (form && status && hForm) {
     var submitBtn = form.querySelector('button[type="submit"]');
+    var dismissTimer = null;
+
+    var showSuccess = function () {
+      status.textContent = "Thanks! Your request has been received. We will get back to you within one business day.";
+      status.classList.remove("is-error", "is-fade");
+      status.classList.add("is-success");
+      form.reset();
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Request a quote";
+      }
+
+      clearTimeout(dismissTimer);
+      dismissTimer = setTimeout(function () {
+        status.classList.add("is-fade");
+        setTimeout(function () {
+          status.textContent = "";
+          status.classList.remove("is-success", "is-fade");
+        }, 400);
+      }, 5000);
+    };
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -167,35 +188,22 @@
       document.getElementById("hf-guests").value   = document.getElementById("f-guests").value;
       document.getElementById("hf-message").value  = document.getElementById("f-message").value.trim();
 
+      status.textContent = "";
+      status.classList.remove("is-success", "is-error", "is-fade");
+
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.textContent = "Sending...";
       }
 
       var iframe = document.getElementById("hidden-gform");
-      var timeout = setTimeout(function () {
-        status.textContent = "Thanks! Your request has been received. We will get back to you within one business day.";
-        status.classList.add("is-success");
-        status.classList.remove("is-error");
-        form.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Request a quote";
-        }
-      }, 3000);
+      var fallback = setTimeout(showSuccess, 3000);
 
       if (iframe) {
         iframe.addEventListener("load", function onLoad() {
           iframe.removeEventListener("load", onLoad);
-          clearTimeout(timeout);
-          status.textContent = "Thanks! Your request has been received. We will get back to you within one business day.";
-          status.classList.add("is-success");
-          status.classList.remove("is-error");
-          form.reset();
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Request a quote";
-          }
+          clearTimeout(fallback);
+          showSuccess();
         });
       }
 

@@ -1045,7 +1045,12 @@ img {
 }
 
 .form-status.is-success {
-  color: #146a2e;
+  color: var(--purple);
+  transition: opacity 0.4s ease;
+}
+
+.form-status.is-fade {
+  opacity: 0;
 }
 
 /* ---------- Footer ---------- */
