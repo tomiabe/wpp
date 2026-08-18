@@ -289,13 +289,11 @@ img {
   align-items: center;
   gap: 7px;
   font-weight: 600;
-}
-
-.topbar__phone {
   color: var(--white);
   text-decoration: none;
 }
 
+.topbar__loc:hover,
 .topbar__phone:hover {
   opacity: 0.8;
 }
