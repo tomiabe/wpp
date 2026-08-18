@@ -1020,6 +1020,10 @@ img {
   background: var(--white);
 }
 
+.field select {
+  padding-right: 40px;
+}
+
 .field input:focus-visible,
 .field select:focus-visible,
 .field textarea:focus-visible {
