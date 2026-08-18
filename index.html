@@ -912,20 +912,20 @@
     <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
   </button>
 
-  <!-- Hidden iframe for Google Forms submission -->
+  <!-- Hidden iframe for form submission -->
   <iframe name="hidden-gform" id="hidden-gform" style="display:none" aria-hidden="true"></iframe>
   <form id="gform-hidden"
-        action="https://docs.google.com/forms/d/e/1FAIpQLScsND5_j5v6NHN1VYZGd4oH3RziJNcR7U7rDnV-UO-_wg8Vzg/formResponse"
+        action="https://script.google.com/macros/s/AKfycbzGoLCLQJcFEb1VlTFG0UU2uTnC-hei5zPHrtowdsJtm0SLCUYH6jQjitmZfzf86aBG/exec"
         method="POST"
         target="hidden-gform"
         style="display:none">
-    <input type="hidden" name="entry.321860398" id="hf-name">
-    <input type="hidden" name="entry.1411408932" id="hf-email">
-    <input type="hidden" name="entry.350950027" id="hf-phone">
-    <input type="hidden" name="entry.1000380054" id="hf-type">
-    <input type="hidden" name="entry.871144696" id="hf-date">
-    <input type="hidden" name="entry.1194971846" id="hf-guests">
-    <input type="hidden" name="entry.591950168" id="hf-message">
+    <input type="hidden" name="name" id="hf-name">
+    <input type="hidden" name="email" id="hf-email">
+    <input type="hidden" name="phone" id="hf-phone">
+    <input type="hidden" name="type" id="hf-type">
+    <input type="hidden" name="date" id="hf-date">
+    <input type="hidden" name="guests" id="hf-guests">
+    <input type="hidden" name="message" id="hf-message">
   </form>
 
   <script src="assets/js/main.js"></script>
