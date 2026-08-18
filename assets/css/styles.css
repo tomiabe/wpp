@@ -431,7 +431,7 @@ img {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(58, 83, 163, 0.92) 0%, rgba(58, 83, 163, 0.72) 45%, rgba(58, 83, 163, 0.35) 100%);
+  background: linear-gradient(90deg, rgba(58, 83, 163, 0.85) 0%, rgba(58, 83, 163, 0.72) 45%, rgba(58, 83, 163, 0.35) 100%);
 }
 
 .hero__inner {
