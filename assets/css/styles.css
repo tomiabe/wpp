@@ -601,8 +601,8 @@ img {
 }
 
 .filter-pill.is-active {
-  background: var(--purple);
-  color: var(--white);
+  background: var(--yellow);
+  color: var(--purple);
 }
 
 .flavor-grid {
@@ -865,10 +865,12 @@ img {
 
 .reviews__cta .link {
   color: var(--yellow);
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .reviews__cta .link:hover {
-  color: var(--white);
+  color: var(--yellow);
 }
 
 @media (max-width: 860px) {
