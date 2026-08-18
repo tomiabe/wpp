@@ -150,6 +150,8 @@
   };
 
   if (form && status && hForm) {
+    var submitBtn = form.querySelector('button[type="submit"]');
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if (!form.checkValidity()) {
@@ -165,12 +167,39 @@
       document.getElementById("hf-guests").value   = document.getElementById("f-guests").value;
       document.getElementById("hf-message").value  = document.getElementById("f-message").value.trim();
 
-      hForm.submit();
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+      }
 
-      status.textContent = "Thanks! Your request has been received. We will get back to you within one business day.";
-      status.classList.add("is-success");
-      status.classList.remove("is-error");
-      form.reset();
+      var iframe = document.getElementById("hidden-gform");
+      var timeout = setTimeout(function () {
+        status.textContent = "Thanks! Your request has been received. We will get back to you within one business day.";
+        status.classList.add("is-success");
+        status.classList.remove("is-error");
+        form.reset();
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Request a quote";
+        }
+      }, 3000);
+
+      if (iframe) {
+        iframe.addEventListener("load", function onLoad() {
+          iframe.removeEventListener("load", onLoad);
+          clearTimeout(timeout);
+          status.textContent = "Thanks! Your request has been received. We will get back to you within one business day.";
+          status.classList.add("is-success");
+          status.classList.remove("is-error");
+          form.reset();
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Request a quote";
+          }
+        });
+      }
+
+      hForm.submit();
     });
   }
 })();
