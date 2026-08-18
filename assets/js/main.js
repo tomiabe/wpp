@@ -138,69 +138,6 @@
     });
   }
 
-  /* ---- Order overlay ---- */
-  var overlay = document.getElementById("order-overlay");
-  var overlayFrame = document.getElementById("order-overlay-frame");
-  var overlayClose = document.getElementById("order-overlay-close");
-  var overlayLoading = document.getElementById("order-overlay-loading");
-  var orderSrc = "https://whatspoppinpopcorn.zenfoody.com";
-  var frameReady = false;
-  var revealTimer = null;
-
-  function revealOrder() {
-    if (revealTimer) {
-      window.clearTimeout(revealTimer);
-      revealTimer = null;
-    }
-    if (overlayLoading) overlayLoading.classList.add("is-hidden");
-    if (overlayFrame) overlayFrame.classList.add("is-loaded");
-  }
-
-  function openOrder(e) {
-    e.preventDefault();
-    if (!overlay) return;
-    if (!frameReady) {
-      frameReady = true;
-      overlayFrame.src = orderSrc;
-      // Zenfoody loads many third-party resources and its "load" event can
-      // take a long time (or never fire), so reveal the embedded app on a
-      // short fixed delay as well as on load.
-      revealTimer = window.setTimeout(revealOrder, 3000);
-    } else {
-      revealOrder();
-    }
-    overlay.hidden = false;
-    document.body.classList.add("overlay-open");
-    overlayClose.focus();
-  }
-
-  function closeOrder() {
-    if (!overlay) return;
-    overlay.hidden = true;
-    document.body.classList.remove("overlay-open");
-  }
-
-  if (overlayFrame) {
-    overlayFrame.addEventListener("load", revealOrder);
-  }
-
-  document.querySelectorAll(".open-order").forEach(function (link) {
-    link.addEventListener("click", openOrder);
-  });
-
-  if (overlayClose) {
-    overlayClose.addEventListener("click", closeOrder);
-  }
-
-  if (overlay) {
-    overlay.addEventListener("click", function (e) {
-      if (e.target === overlay) closeOrder();
-    });
-    overlay.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeOrder();
-    });
-  }
-
   var form = document.getElementById("event-form");
   var status = document.getElementById("form-status");
   if (form && status) {
