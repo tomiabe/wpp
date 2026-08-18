@@ -140,13 +140,33 @@
 
   var form = document.getElementById("event-form");
   var status = document.getElementById("form-status");
-  if (form && status) {
+  var hForm = document.getElementById("gform-hidden");
+
+  var planningMap = {
+    party: "Party or Event",
+    gift: "Gift Order",
+    corporate: "Corporate Gifting",
+    other: "Something else"
+  };
+
+  if (form && status && hForm) {
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
+
+      document.getElementById("hf-name").value    = document.getElementById("f-name").value.trim();
+      document.getElementById("hf-email").value   = document.getElementById("f-email").value.trim();
+      document.getElementById("hf-phone").value   = document.getElementById("f-phone").value.trim();
+      document.getElementById("hf-type").value     = planningMap[document.getElementById("f-type").value] || "";
+      document.getElementById("hf-date").value     = document.getElementById("f-date").value;
+      document.getElementById("hf-guests").value   = document.getElementById("f-guests").value;
+      document.getElementById("hf-message").value  = document.getElementById("f-message").value.trim();
+
+      hForm.submit();
+
       status.textContent = "Thanks! Your request has been received. We will get back to you within one business day.";
       status.classList.add("is-success");
       status.classList.remove("is-error");
