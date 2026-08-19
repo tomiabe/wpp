@@ -227,7 +227,7 @@ img {
 .btn--white {
   background: var(--white);
   color: var(--ink);
-  border-color: var(--ink);
+  border-color: var(--purple);
 }
 
 .btn--white:hover {
@@ -613,6 +613,7 @@ img {
 .filter-pill.is-active {
   background: var(--yellow);
   color: var(--purple);
+  box-shadow: 3px 3px 0 var(--purple);
 }
 
 .flavor-grid {
