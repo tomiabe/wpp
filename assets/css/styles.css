@@ -224,6 +224,16 @@ img {
   background: var(--purple-soft);
 }
 
+.btn--white {
+  background: var(--white);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn--white:hover {
+  background: var(--yellow);
+}
+
 .link {
   display: inline-flex;
   align-items: center;
