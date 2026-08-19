@@ -226,7 +226,7 @@ img {
 
 .btn--white {
   background: var(--white);
-  color: var(--ink);
+  color: var(--purple);
   border-color: var(--purple);
 }
 
