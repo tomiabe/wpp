@@ -884,6 +884,82 @@ img {
   }
 }
 
+/* ---------- Feed / Social Marquee ---------- */
+
+.feed {
+  overflow: hidden;
+  background: var(--cream);
+  border-top: var(--border-w) solid var(--ink);
+  border-bottom: var(--border-w) solid var(--ink);
+}
+
+.feed__track {
+  overflow: hidden;
+  padding: 10px 0;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.feed__row {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+}
+
+.feed__row img {
+  height: 200px;
+  width: auto;
+  border-radius: 14px;
+  border: 2px solid var(--ink);
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.feed__track--left .feed__row {
+  animation: marquee-left 90s linear infinite;
+}
+
+.feed__track--right .feed__row {
+  animation: marquee-right 90s linear infinite;
+}
+
+.feed__track:hover .feed__row {
+  animation-play-state: paused;
+}
+
+.feed__track:hover .feed__row img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.feed__cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 860px) {
+  .feed__row img {
+    height: 140px;
+  }
+
+  .feed__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* ---------- FAQ ---------- */
 
 .faq {
