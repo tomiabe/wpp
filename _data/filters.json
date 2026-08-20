@@ -1,0 +1,10 @@
+{
+  "categories": [
+    { "value": "all", "label": "All" },
+    { "value": "sweet", "label": "Sweet & Fruity" },
+    { "value": "caramel", "label": "Caramel" },
+    { "value": "savory", "label": "Savory & Cheesy" },
+    { "value": "nutty", "label": "Nutty & Toffee" },
+    { "value": "chocolate", "label": "Chocolate & Specialty" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "heading": "Popcorn for every celebration",
+  "subheading": "Gifts, parties, offices, and holidays. We make it easy to share a smile.",
+  "items": [
+    {
+      "title": "Gift boxes & e-gift cards",
+      "description": "Custom tins, gift bags, and instant e-gift cards for birthdays, thank yous, and teacher treats.",
+      "link_label": "Send a gift",
+      "link_url": "https://whatspoppinpopcorn.zenfoody.com/",
+      "link_external": true
+    },
+    {
+      "title": "Parties & events",
+      "description": "Birthdays, baby showers, and graduations with custom favors and snack packs.",
+      "link_label": "Plan an event",
+      "link_url": "#contact",
+      "link_external": false
+    },
+    {
+      "title": "Corporate gifting",
+      "description": "Branded tins, office treats, and client gifts with your logo and message.",
+      "link_label": "Get a quote",
+      "link_url": "#contact",
+      "link_external": false
+    },
+    {
+      "title": "Seasonal & holiday specials",
+      "description": "Spring mixes, holiday flavors, and themed packs that rotate all year.",
+      "link_label": "See seasonal flavors",
+      "link_url": "https://whatspoppinpopcorn.zenfoody.com/",
+      "link_external": true
+    }
+  ]
+}

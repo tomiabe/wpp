@@ -1,0 +1,23 @@
+{
+  "heading": "What our customers say",
+  "subheading": "4.8 stars on Google — here's why people keep coming back.",
+  "cta_label": "Read more reviews on Google",
+  "cta_url": "https://www.google.com/maps/place/What's+Poppin+Popcorn+Katy/@29.7705565,-95.8194338,19z/data=!4m8!3m7!1s0x8641241c19d0f9a9:0xdd445ab77f277cd3!8m2!3d29.7705565!4d-95.81879!9m1!1b1!16s%2Fg%2F1q6jbvfs5",
+  "items": [
+    {
+      "quote": "The popcorn spot near my home is closed, so I had to find a new spot. I think I have to look no further than What's Poppin Popcorn.",
+      "author": "Ashley C.",
+      "stars": 5
+    },
+    {
+      "quote": "They sell amazing popcorn and cotton candy when available. You can order any size, you can order and pay over the phone and they have it ready when you get there. Any order you need they got you!",
+      "author": "Krystle W.",
+      "stars": 5
+    },
+    {
+      "quote": "OMG this is the BEST POPCORN EVER! Customer Service is on point! Love it! Found it on Google and will go back each and every time when in need for popcorn!",
+      "author": "Andrea B.",
+      "stars": 5
+    }
+  ]
+}

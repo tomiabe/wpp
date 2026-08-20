@@ -1,0 +1,38 @@
+{
+  "heading": "Frequently asked questions",
+  "subheading": "Quick answers before you order.",
+  "allergy_note": {
+    "title": "Allergy alert",
+    "text": "Our products may contain or may have trace amounts of peanuts, tree nuts, soy, or dairy."
+  },
+  "items": [
+    {
+      "question": "How can I order?",
+      "answer": "Order online for pickup through our online menu, order delivery via Uber Eats, or visit our Katy store in person. You can also call us at 281-394-2550."
+    },
+    {
+      "question": "Do you ship outside the local area?",
+      "answer": "Not yet. We focus on pickup, local delivery, and in-store orders. Shipping is something we are working on."
+    },
+    {
+      "question": "What sizes do you offer?",
+      "answer": "Our popcorn comes in bags, tins, and gift boxes, from a 1.5 cup Popcone up to a 275 cup Party Sized option."
+    },
+    {
+      "question": "Can I mix my own flavors?",
+      "answer": "Yes. Mix and match your favorite flavors or colors to fit your event or theme. Seasonal flavors may also be available."
+    },
+    {
+      "question": "Is your popcorn gluten-free or nut-free?",
+      "answer": "Many flavors are gluten-free, but some contain dairy or nuts. Check our flavor list or ask in-store for allergen details."
+    },
+    {
+      "question": "How long does your popcorn stay fresh?",
+      "answer": "Up to 2 to 3 weeks when sealed and stored in a cool, dry place. Our tins help it stay fresh even longer."
+    },
+    {
+      "question": "Do you handle events and bulk orders?",
+      "answer": "Absolutely. We offer bulk orders, party favors, and corporate gifting. Contact us for details and a quote."
+    }
+  ]
+}

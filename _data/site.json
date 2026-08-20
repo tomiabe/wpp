@@ -1,0 +1,25 @@
+{
+  "title": "What's Poppin Popcorn",
+  "tagline": "What's Poppin Popcorn Katy | Gourmet Popcorn in Katy, TX",
+  "description": "Gourmet popcorn with 50+ bold flavors, popped fresh daily in Katy, TX. Order online for pickup or delivery, plan a party or event, or stop by our shop on Pin Oak Rd.",
+  "phone": "281-394-2550",
+  "phone_href": "tel:281-394-2550",
+  "email": "info@whatspoppinpopcorn.co",
+  "address": "1326 Pin Oak Rd, Katy, TX 77494",
+  "city": "Katy",
+  "state": "TX",
+  "zip": "77494",
+  "hours": "Mon to Sat, 11 AM to 7 PM",
+  "social": {
+    "facebook": "https://www.facebook.com/whatspoppinkaty",
+    "instagram": "https://www.instagram.com/whatspoppinkaty"
+  },
+  "maps_link": "https://maps.app.goo.gl/x8cDYo5CVmVDbdbm6",
+  "order_url": "https://whatspoppinpopcorn.zenfoody.com/",
+  "ga_id": "G-EM9FTJ6LV0",
+  "logo": "assets/img/logo.webp",
+  "favicon": "assets/img/favicon.webp",
+  "og_image": "https://whatspoppinpopcorn.co/assets/img/og-image.png",
+  "canonical_url": "https://whatspoppinpopcorn.co/",
+  "copyright": "© 2026 What's Poppin Popcorn Katy. Made with love in Texas."
+}

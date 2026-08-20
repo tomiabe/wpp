@@ -1,0 +1,48 @@
+{
+  "heading": "Katy's gourmet popcorn shop with 50+ bold flavors, made fresh daily.",
+  "subheading": "Order online for pickup or delivery, gift a box to someone you love, or stop by our shop on Pin Oak Rd in Katy, TX.",
+  "ctas": [
+    {
+      "label": "Order Online",
+      "href": "https://whatspoppinpopcorn.zenfoody.com/",
+      "external": true,
+      "style": "btn--yellow"
+    },
+    {
+      "label": "Plan a Party or Event",
+      "href": "#contact",
+      "external": false,
+      "style": "btn--ghost"
+    }
+  ],
+  "slides": [
+    "assets/img/flavors/caramel-drizzle.webp",
+    "assets/img/flavors/cheese.webp",
+    "assets/img/flavors/cherry.webp",
+    "assets/img/flavors/chicago-mix.webp",
+    "assets/img/flavors/confetti.webp",
+    "assets/img/flavors/denver-mix.webp",
+    "assets/img/flavors/extra-butter-chicago-style.webp",
+    "assets/img/flavors/extra-buttery-caramel.webp",
+    "assets/img/flavors/grape.webp",
+    "assets/img/flavors/green-apple.webp",
+    "assets/img/flavors/katy-mix.webp",
+    "assets/img/flavors/key-lime.webp",
+    "assets/img/flavors/orange.webp",
+    "assets/img/flavors/peanut-butter-chocolate-drizzle.webp",
+    "assets/img/flavors/pina-colada.webp",
+    "assets/img/flavors/pink-cotton-candy.webp",
+    "assets/img/flavors/plain.webp",
+    "assets/img/flavors/ranch.webp",
+    "assets/img/flavors/salt-and-vinegar.webp",
+    "assets/img/flavors/salty-caramel.webp",
+    "assets/img/flavors/strawberry.webp",
+    "assets/img/flavors/vanilla.webp",
+    "assets/img/flavors/watermelon.webp",
+    "assets/img/flavors/white-cheddar.webp",
+    "assets/img/flavors/white-chocolate-pretzel.webp",
+    "assets/img/flavors/white-chocolate.webp",
+    "assets/img/flavors/blue-raspberry.webp",
+    "assets/img/flavors/caramel-cashew.webp"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "heading": "Shop popcorn by flavor",
+  "subheading": "Not sure where to start? These are the crowd favorites, ready for pickup or delivery.",
+  "items": [
+    {
+      "name": "Katy Mix",
+      "description": "Our signature local mix, only at our Katy shop.",
+      "image": "assets/img/flavors/katy-mix.webp",
+      "alt": "Katy Mix popcorn",
+      "order_url": "https://whatspoppinpopcorn.zenfoody.com/"
+    },
+    {
+      "name": "Movie Theatre Butter",
+      "description": "The classic cinema flavor, buttery and bold.",
+      "image": "assets/img/flavors/movie-theatre-butter.webp",
+      "alt": "Movie Theatre Butter popcorn",
+      "order_url": "https://whatspoppinpopcorn.zenfoody.com/"
+    },
+    {
+      "name": "Cheesy Cheese",
+      "description": "Triple the cheese, triple the flavor.",
+      "image": "assets/img/flavors/cheesy-cheese.webp",
+      "alt": "Cheesy Cheese popcorn",
+      "order_url": "https://whatspoppinpopcorn.zenfoody.com/"
+    }
+  ]
+}

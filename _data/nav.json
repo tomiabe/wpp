@@ -1,0 +1,11 @@
+{
+  "links": [
+    { "label": "Home", "href": "#top" },
+    { "label": "Shop", "href": "#shop" },
+    { "label": "Sizes", "href": "#sizes" },
+    { "label": "Gifts & Events", "href": "#gifts" },
+    { "label": "Our Story", "href": "#story" },
+    { "label": "FAQ", "href": "#faq" },
+    { "label": "Visit Us", "href": "#visit" }
+  ]
+}

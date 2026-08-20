@@ -1,0 +1,64 @@
+{
+  "heading": "Pick the perfect size",
+  "subheading": "Every size comes in bags, tins, and gift boxes. Here is the right fit for every moment.",
+  "cta_label": "See sizes and prices online",
+  "cta_url": "https://whatspoppinpopcorn.zenfoody.com/",
+  "items": [
+    {
+      "name": "Popcone",
+      "volume": "1.5 cups",
+      "description": "A quick taste or a kid-sized treat.",
+      "image": "assets/img/sizes/size01.webp",
+      "alt": "Popcone size, 1.5 cups"
+    },
+    {
+      "name": "Tiny",
+      "volume": "3 cups",
+      "description": "Perfect for trying a new flavor.",
+      "image": "assets/img/sizes/size02.webp",
+      "alt": "Tiny size, 3 cups"
+    },
+    {
+      "name": "Junior",
+      "volume": "6 cups",
+      "description": "A personal snack bag for one.",
+      "image": "assets/img/sizes/size03.webp",
+      "alt": "Junior size, 6 cups"
+    },
+    {
+      "name": "Small",
+      "volume": "9 cups",
+      "description": "Sharing with one or two friends.",
+      "image": "assets/img/sizes/size04.webp",
+      "alt": "Small size, 9 cups"
+    },
+    {
+      "name": "Medium",
+      "volume": "26 cups",
+      "description": "Movie night for 4 to 6 people.",
+      "image": "assets/img/sizes/size05.webp",
+      "alt": "Medium size, 26 cups"
+    },
+    {
+      "name": "Large",
+      "volume": "42 cups",
+      "description": "Game day or a bigger crowd.",
+      "image": "assets/img/sizes/size06.webp",
+      "alt": "Large size, 42 cups"
+    },
+    {
+      "name": "Extra Large",
+      "volume": "110 cups",
+      "description": "Office snacks or a small party.",
+      "image": "assets/img/sizes/size07.webp",
+      "alt": "Extra Large size, 110 cups"
+    },
+    {
+      "name": "Party Sized",
+      "volume": "275 cups",
+      "description": "Big events and concessions. Butter flavor only.",
+      "image": "assets/img/sizes/size08.webp",
+      "alt": "Party Sized, 275 cups"
+    }
+  ]
+}

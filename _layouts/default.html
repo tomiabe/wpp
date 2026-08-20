@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.tagline }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="popcorn, gourmet popcorn, Katy TX, snacks, party snacks, corporate gifts, flavored popcorn">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ site.canonical_url }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.canonical_url }}">
+  <meta property="og:title" content="{{ site.tagline }}">
+  <meta property="og:description" content="Gourmet popcorn with 50+ bold flavors, popped fresh daily in Katy, TX. Pickup, delivery, gifts and events.">
+  <meta property="og:image" content="{{ site.og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="{{ site.title }}">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.tagline }}">
+  <meta name="twitter:description" content="Gourmet popcorn with 50+ bold flavors, popped fresh daily in Katy, TX. Pickup, delivery, gifts and events.">
+  <meta name="twitter:image" content="{{ site.og_image }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/webp" href="{{ site.favicon }}">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.ga_id }}');
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ site.title }}",
+    "image": "{{ site.logo }}",
+    "url": "{{ site.canonical_url }}",
+    "telephone": "+1-{{ site.phone }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1326 Pin Oak Rd",
+      "addressLocality": "{{ site.city }}",
+      "addressRegion": "{{ site.state }}",
+      "postalCode": "{{ site.zip }}",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 29.7706,
+      "longitude": -95.8194
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "11:00",
+        "closes": "19:00"
+      }
+    ],
+    "priceRange": "$$",
+    "servesCuisine": "Popcorn",
+    "sameAs": [
+      "{{ site.social_facebook }}",
+      "{{ site.social_instagram }}"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__hours">
+        <svg class="icon icon--xs" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        {{ site.hours }}
+      </p>
+      <a class="topbar__loc" href="{{ site.maps_link }}" target="_blank" rel="noopener">
+        <svg class="icon icon--xs" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        1326 Pin Oak Rd, Katy, TX
+      </a>
+      <a class="topbar__phone" href="{{ site.phone_href }}">
+        <svg class="icon icon--xs" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        {{ site.phone }}
+      </a>
+      <div class="topbar__social">
+        <a href="{{ site.social_facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg class="icon icon--xs" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="{{ site.social_instagram }}" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon icon--xs" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="header__brand" href="#top" aria-label="What's Poppin Popcorn home">
+        <img src="{{ site.logo }}" alt="{{ site.title }} logo" width="100" height="66">
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        {% for link in site.data.nav.links %}
+        <a href="{{ link.href }}">{{ link.label }}</a>
+        {% endfor %}
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--yellow btn--sm" href="{{ site.order_url }}" target="_blank" rel="noopener">
+          Order Online
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__slides" aria-hidden="true">
+        {% for slide in site.data.hero.slides %}
+        <div class="hero__slide{% if forloop.first %} is-active{% endif %}" style="background-image:url('{{ slide }}')"></div>
+        {% endfor %}
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <h1>{{ site.data.hero.heading }}</h1>
+        <p class="hero__sub">{{ site.data.hero.subheading }}</p>
+        <div class="hero__ctas">
+          {% for cta in site.data.hero.ctas %}
+          <a class="btn {{ cta.style }}" href="{{ cta.href }}"{% if cta.external %} target="_blank" rel="noopener"{% endif %}>
+            {{ cta.label }}
+            {% if forloop.first %}
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            {% else %}
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg>
+            {% endif %}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="container trust__grid">
+        {% for stat in site.data.trust.stats %}
+        <div class="trust__item">
+          <span class="trust__num">{{ stat.num }}</span>
+          <span class="trust__label">{{ stat.label }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="shop section" id="shop">
+      <div class="container">
+        <header class="section__head">
+          <h2>{{ site.data.bestsellers.heading }}</h2>
+          <p>{{ site.data.bestsellers.subheading }}</p>
+        </header>
+
+        <div class="bestsellers">
+          {% for item in site.data.bestsellers.items %}
+          <article class="flavor-card flavor-card--feature">
+            <div class="flavor-card__media">
+              <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
+              <span class="flavor-card__badge">Bestseller</span>
+            </div>
+            <div class="flavor-card__body">
+              <h3>{{ item.name }}</h3>
+              <p>{{ item.description }}</p>
+              <a class="link" href="{{ item.order_url }}" target="_blank" rel="noopener">
+                Order this flavor
+                <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+
+        <div class="shop__filter" role="group" aria-label="Filter flavors by category">
+          {% for cat in site.data.filters.categories %}
+          <button class="filter-pill{% if forloop.first %} is-active{% endif %}" type="button" data-filter="{{ cat.value }}">{{ cat.label }}</button>
+          {% endfor %}
+        </div>
+
+        <div class="flavor-grid" id="flavor-grid">
+          {% for flavor in site.data.menu.flavors %}
+          <article class="flavor-card" data-category="{{ flavor.category }}">
+            <div class="flavor-card__media">
+              <img src="{{ flavor.image }}" alt="{{ flavor.alt }}" loading="lazy">
+            </div>
+            <div class="flavor-card__body">
+              <h3>{{ flavor.name }}{% if flavor.seasonal %} <span class="flavor-card__seasonal">Seasonal</span>{% endif %}</h3>
+              <p>{{ flavor.description }}</p>
+              <a class="link" href="{{ site.data.menu.order_url }}" target="_blank" rel="noopener">Order <span class="sr-only">{{ flavor.name }}</span></a>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+
+        <p class="shop__note">{{ site.data.menu.note }}</p>
+      </div>
+    </section>
+
+    <section class="sizes section" id="sizes">
+      <div class="container">
+        <header class="section__head">
+          <h2>{{ site.data.sizes.heading }}</h2>
+          <p>{{ site.data.sizes.subheading }}</p>
+        </header>
+
+        <div class="sizes__grid">
+          {% for size in site.data.sizes.items %}
+          <article class="size-card">
+            <div class="size-card__media">
+              <img src="{{ size.image }}" alt="{{ size.alt }}" loading="lazy">
+            </div>
+            <h3>{{ size.name }} <span>{{ size.volume }}</span></h3>
+            <p>{{ size.description }}</p>
+          </article>
+          {% endfor %}
+        </div>
+
+        <div class="sizes__cta">
+          <a class="btn btn--yellow btn--lg" href="{{ site.data.sizes.cta_url }}" target="_blank" rel="noopener">
+            {{ site.data.sizes.cta_label }}
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gifts section" id="gifts">
+      <div class="container">
+        <header class="section__head">
+          <h2>{{ site.data.gifts.heading }}</h2>
+          <p>{{ site.data.gifts.subheading }}</p>
+        </header>
+
+        <div class="gifts__grid">
+          {% for item in site.data.gifts.items %}
+          <article class="gift-card">
+            <div class="gift-card__icon">
+              {% if forloop.index == 1 %}
+              <svg class="icon icon--lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"/></svg>
+              {% elsif forloop.index == 2 %}
+              <svg class="icon icon--lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.8 11.3 2 22l10.7-3.79"/><path d="M4 3h.01"/><path d="M22 8h.01"/><path d="M15 2h.01"/><path d="M22 20h.01"/><path d="m22 2-2.24.75a2.9 2.9 0 0 0-1.96 3.12c.1.86-.57 1.63-1.45 1.63h-.38c-.86 0-1.6.6-1.76 1.44L14 10"/><path d="m22 13-.82-.33c-.86-.34-1.82.2-1.98 1.11c-.11.7-.72 1.22-1.43 1.22H17"/><path d="m11 2 .33.82c.34.86-.2 1.82-1.11 1.98C9.52 4.9 9 5.52 9 6.23V7"/><path d="M11 13c1.93 1.93 2.83 4.17 2 5-.83.83-3.07-.07-5-2-1.93-1.93-2.83-4.17-2-5 .83-.83 3.07.07 5 2Z"/></svg>
+              {% elsif forloop.index == 3 %}
+              <svg class="icon icon--lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
+              {% else %}
+              <svg class="icon icon--lg" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+              {% endif %}
+            </div>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+            <a class="link link--light" href="{{ item.link_url }}"{% if item.link_external %} target="_blank" rel="noopener"{% endif %}>
+              {{ item.link_label }}
+              <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="container story__grid">
+        <div class="story__media">
+          {% for img in site.data.story.images %}
+          <img class="story__media-slide{% if forloop.first %} is-active{% endif %}" src="{{ img.src }}" alt="{{ img.alt }}" loading="lazy">
+          {% endfor %}
+        </div>
+        <div class="story__body">
+          <h2>{{ site.data.story.heading }}</h2>
+          {% for p in site.data.story.paragraphs %}
+          <p>{{ p }}</p>
+          {% endfor %}
+          <ul class="story__points">
+            {% for point in site.data.story.points %}
+            <li>
+              <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              {{ point }}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <header class="section__head">
+          <h2>{{ site.data.reviews.heading }}</h2>
+          <p>{{ site.data.reviews.subheading }}</p>
+        </header>
+        <div class="reviews__grid">
+          {% for review in site.data.reviews.items %}
+          <article class="review-card">
+            <div class="review-card__stars" aria-label="{{ review.stars }} out of 5 stars">
+              {% for i in (1..review.stars) %}
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              {% endfor %}
+            </div>
+            <blockquote class="review-card__quote">
+              {{ review.quote }}
+            </blockquote>
+            <p class="review-card__author">{{ review.author }}</p>
+          </article>
+          {% endfor %}
+        </div>
+        <p class="reviews__cta">
+          <a class="link" href="{{ site.data.reviews.cta_url }}" target="_blank" rel="noopener">
+            {{ site.data.reviews.cta_label }}
+            <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="feed section" id="feed">
+      <div class="container">
+        <header class="section__head">
+          <h2>{{ site.data.feed.heading }}</h2>
+          <p>{{ site.data.feed.subheading }}</p>
+        </header>
+      </div>
+      <div class="feed__track feed__track--left" aria-hidden="true">
+        <div class="feed__row">
+          {% for img in site.data.feed.images limit:35 %}
+              <img src="{{ img }}" alt="" loading="lazy">
+          {% endfor %}
+          {% for img in site.data.feed.images limit:35 %}
+              <img src="{{ img }}" alt="" loading="lazy">
+          {% endfor %}
+        </div>
+      </div>
+      <div class="feed__track feed__track--right" aria-hidden="true">
+        <div class="feed__row">
+          {% for img in site.data.feed.images offset:35 %}
+              <img src="{{ img }}" alt="" loading="lazy">
+          {% endfor %}
+          {% for img in site.data.feed.images offset:35 %}
+              <img src="{{ img }}" alt="" loading="lazy">
+          {% endfor %}
+        </div>
+      </div>
+      <div class="container feed__cta">
+        {% for cta in site.data.feed.cta %}
+        <a class="btn {{ cta.style }}" href="{{ cta.url }}" target="_blank" rel="noopener">
+          {{ cta.label }}
+        </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container">
+        <header class="section__head">
+          <h2>{{ site.data.faq.heading }}</h2>
+          <p>{{ site.data.faq.subheading }}</p>
+        </header>
+
+        <div class="accordion" id="accordion">
+          {% for item in site.data.faq.items %}
+          <div class="accordion__item">
+            <h3>
+              <button class="accordion__trigger" type="button" aria-expanded="false">
+                {{ item.question }}
+                <svg class="icon accordion__chev" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+              </button>
+            </h3>
+            <div class="accordion__panel">
+              <p>{{ item.answer }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="allergy" role="note">
+          <h3>{{ site.data.faq.allergy_note.title }}</h3>
+          <p>{{ site.data.faq.allergy_note.text }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit section" id="visit">
+      <div class="container visit__grid">
+        <div class="visit__info">
+          <h2>{{ site.data.visit.heading }}</h2>
+          <p>{{ site.data.visit.subheading }}</p>
+
+          <ul class="visit__list">
+            <li>
+              <span class="visit__icon">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <strong>Address</strong>
+                <span>{{ site.data.visit.address }}</span>
+              </div>
+            </li>
+            <li>
+              <span class="visit__icon">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <div>
+                <strong>Hours</strong>
+                <span>{{ site.data.visit.hours }}</span>
+              </div>
+            </li>
+            <li>
+              <span class="visit__icon">
+                <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div>
+                <strong>Phone</strong>
+                <a href="{{ site.data.visit.phone_href }}">{{ site.data.visit.phone }}</a>
+              </div>
+            </li>
+          </ul>
+
+          <div class="visit__ctas">
+            <a class="btn btn--yellow" href="{{ site.data.visit.maps_link }}" target="_blank" rel="noopener">
+              {{ site.data.visit.directions_label }}
+              <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="{{ site.data.visit.phone_href }}">{{ site.data.visit.call_label }}</a>
+          </div>
+        </div>
+
+        <div class="visit__map">
+          <iframe title="Map to What's Poppin Popcorn, {{ site.data.visit.address }}" src="{{ site.data.visit.map_embed_url }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__intro">
+          <h2>Plan a party, event, or gift order</h2>
+          <p>Tell us about your event and we will send you a quote. Birthdays, baby showers, corporate treats, and more.</p>
+          <p>Prefer to talk it through? Call us at <a href="{{ site.phone_href }}">{{ site.phone }}</a> or email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+          <ul class="contact__perks">
+            <li>
+              <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Custom tins and favor bags
+            </li>
+            <li>
+              <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Bulk and corporate pricing
+            </li>
+            <li>
+              <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Your logo or message on tins
+            </li>
+          </ul>
+        </div>
+
+        <form class="event-form" id="event-form" novalidate>
+          <!-- Honeypot: hidden from humans, bots will fill this -->
+          <div class="hp-field" aria-hidden="true" tabindex="-1">
+            <label for="f-website">Website</label>
+            <input type="text" id="f-website" name="website" autocomplete="off" tabindex="-1">
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="f-type">What are you planning?</label>
+              <select id="f-type" name="type" required>
+                <option value="">Choose one</option>
+                <option value="party">Party or event</option>
+                <option value="gift">Gift order</option>
+                <option value="corporate">Corporate gifting</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-date">Event date</label>
+              <input type="date" id="f-date" name="date">
+            </div>
+            <div class="field">
+              <label for="f-guests">Number of guests</label>
+              <input type="number" id="f-guests" name="guests" min="1" placeholder="e.g. 25">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-message">Tell us about your order</label>
+            <textarea id="f-message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="btn btn--yellow btn--lg" type="submit">
+            Request a quote
+            <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="{{ site.logo }}" alt="{{ site.title }} logo" loading="lazy" width="100" height="66">
+        <p>{{ site.data.footer.brand_text }}</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <h3>{{ site.data.footer.nav_heading }}</h3>
+        {% for link in site.data.footer.nav_links %}
+        <a href="{{ link.href }}">{{ link.label }}</a>
+        {% endfor %}
+      </nav>
+      <div class="footer__contact">
+        <h3>{{ site.data.footer.contact_heading }}</h3>
+        <p>{{ site.data.footer.address | replace: ", ", "<br>" }}</p>
+        <p><a href="{{ site.data.footer.phone_href }}">{{ site.data.footer.phone }}</a></p>
+        <p>{{ site.data.footer.hours }}</p>
+      </div>
+      <div class="footer__social">
+        <h3>{{ site.data.footer.social_heading }}</h3>
+        <div class="footer__social-links">
+          {% for social in site.data.footer.social_links %}
+          <a href="{{ social.url }}" target="_blank" rel="noopener" aria-label="{{ social.label }}">
+            {% if social.label == "Facebook" %}
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            {% elsif social.label == "Instagram" %}
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            {% endif %}
+          </a>
+          {% endfor %}
+        </div>
+        <a class="btn btn--yellow btn--sm" href="{{ site.data.footer.order_url }}" target="_blank" rel="noopener">Order Online</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>{{ site.data.footer.copyright }}</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="to-top" class="to-top" type="button" aria-label="Back to top">
+    <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+  </button>
+
+  <!-- Hidden iframe for Google Forms submission -->
+  <iframe name="hidden-gform" id="hidden-gform" style="display:none" aria-hidden="true"></iframe>
+  <form id="gform-hidden"
+        action="https://docs.google.com/forms/d/e/1FAIpQLScsND5_j5v6NHN1VYZGd4oH3RziJNcR7U7rDnV-UO-_wg8Vzg/formResponse"
+        method="POST"
+        target="hidden-gform"
+        style="display:none">
+    <input type="hidden" name="entry.816498862" id="hf-name">
+    <input type="hidden" name="entry.164010434" id="hf-email">
+    <input type="hidden" name="entry.2119773989" id="hf-phone">
+    <input type="hidden" name="entry.16848487" id="hf-type">
+    <input type="hidden" name="entry.1108222297" id="hf-date">
+    <input type="hidden" name="entry.1676689827" id="hf-guests">
+    <input type="hidden" name="entry.247367886" id="hf-message">
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="pageHistory" value="0">
+    <input type="hidden" name="submissionTimestamp" value="-1">
+  </form>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

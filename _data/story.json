@@ -1,0 +1,23 @@
+{
+  "heading": "Popcorn with personality, made in Katy",
+  "paragraphs": [
+    "Since 2013 we have handcrafted gourmet popcorn in small batches using real ingredients and a big imagination.",
+    "Movie night, gifting, or a treat yourself moment. Every kernel is made to make you smile.",
+    "We are not a big faceless snack brand. Walk into our shop on Pin Oak Rd, smell the popcorn, and meet the people who make it."
+  ],
+  "points": [
+    "Popped fresh every day",
+    "Real ingredients, no shortcuts",
+    "50+ flavors and 8 sizes"
+  ],
+  "images": [
+    {
+      "src": "assets/img/store.webp",
+      "alt": "Inside the What's Poppin Popcorn shop in Katy, TX"
+    },
+    {
+      "src": "assets/img/events.webp",
+      "alt": "Popcorn set up for an event in Katy, TX"
+    }
+  ]
+}

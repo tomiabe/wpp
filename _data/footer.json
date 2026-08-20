@@ -1,0 +1,29 @@
+{
+  "brand_text": "Freshly popped, boldly flavored, and made with love in Katy, Texas.",
+  "nav_heading": "Explore",
+  "nav_links": [
+    { "label": "Shop flavors", "href": "#shop" },
+    { "label": "Sizes", "href": "#sizes" },
+    { "label": "Gifts & events", "href": "#gifts" },
+    { "label": "Our story", "href": "#story" },
+    { "label": "FAQ", "href": "#faq" }
+  ],
+  "contact_heading": "Find us",
+  "address": "1326 Pin Oak Rd, Katy, TX 77494",
+  "phone": "281-394-2550",
+  "phone_href": "tel:281-394-2550",
+  "hours": "Mon to Sat, 11 AM to 7 PM",
+  "social_heading": "Follow along",
+  "social_links": [
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/p/Whats-Poppin-Popcorn-Katy-61578943379205/"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/whatspoppinkaty/"
+    }
+  ],
+  "order_url": "https://whatspoppinpopcorn.zenfoody.com/",
+  "copyright": "© 2026 What's Poppin Popcorn Katy. Made with love in Texas."
+}
