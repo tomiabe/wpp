@@ -877,14 +877,11 @@ img {
 .reviews__cta .link {
   color: var(--yellow);
   text-decoration: none;
-  border-bottom: 2px solid var(--yellow);
   font-weight: 700;
-  padding-bottom: 2px;
 }
 
 .reviews__cta .link:hover {
   color: var(--yellow);
-  border-bottom-color: var(--white);
 }
 
 @media (max-width: 860px) {
@@ -1340,6 +1337,10 @@ img {
 
 .footer__bottom a {
   color: inherit;
+}
+
+.footer__credit-link {
+  color: var(--yellow);
 }
 
 .to-top {
