@@ -489,6 +489,30 @@
       "alt": "July 4th Mix popcorn",
       "category": "sweet",
       "seasonal": false
+    },
+    {
+      "name": "Halloween Mix",
+      "description": "A spooky mix of candy corn colors and sweet Halloween treats.",
+      "image": "assets/img/flavors/halloween-mix.webp",
+      "alt": "Halloween Mix popcorn",
+      "category": "sweet",
+      "seasonal": true
+    },
+    {
+      "name": "Fall Mix",
+      "description": "Warm autumn flavors — caramel, cinnamon, and cozy crunch.",
+      "image": "assets/img/flavors/fall-mix.webp",
+      "alt": "Fall Mix popcorn",
+      "category": "caramel",
+      "seasonal": true
+    },
+    {
+      "name": "Valentine Mix",
+      "description": "Sweet hearts and chocolate — a love letter in every bite.",
+      "image": "assets/img/flavors/valentine-mix.webp",
+      "alt": "Valentine Mix popcorn",
+      "category": "chocolate",
+      "seasonal": true
     }
   ]
 }
