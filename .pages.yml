@@ -1,0 +1,455 @@
+media: assets/img
+
+content:
+  - name: site
+    label: Site Settings
+    type: file
+    path: _data/site.json
+    format: json
+    fields:
+      - name: title
+        type: string
+        label: Site Title
+      - name: tagline
+        type: string
+        label: Tagline
+      - name: description
+        type: text
+        label: Meta Description
+      - name: phone
+        type: string
+        label: Phone
+      - name: phone_href
+        type: string
+        label: Phone Link
+      - name: email
+        type: string
+        label: Email
+      - name: address
+        type: string
+        label: Address
+      - name: hours
+        type: string
+        label: Hours
+      - name: maps_link
+        type: string
+        label: Google Maps Link
+      - name: order_url
+        type: string
+        label: Order URL
+      - name: copyright
+        type: string
+        label: Copyright
+      - name: social
+        type: object
+        label: Social Links
+        fields:
+          - name: facebook
+            type: string
+            label: Facebook URL
+          - name: instagram
+            type: string
+            label: Instagram URL
+
+  - name: hero
+    label: Hero Section
+    type: file
+    path: _data/hero.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: ctas
+        type: object
+        label: Buttons
+        list: true
+        fields:
+          - name: label
+            type: string
+            label: Label
+          - name: href
+            type: string
+            label: Link URL
+          - name: external
+            type: boolean
+            label: Open in New Tab
+          - name: style
+            type: string
+            label: Button Style
+            options:
+              - btn--yellow
+              - btn--ghost
+              - btn--white
+
+  - name: trust
+    label: Trust Bar
+    type: file
+    path: _data/trust.json
+    format: json
+    fields:
+      - name: stats
+        type: object
+        label: Stats
+        list: true
+        fields:
+          - name: num
+            type: string
+            label: Number
+          - name: label
+            type: string
+            label: Label
+
+  - name: bestsellers
+    label: Bestsellers
+    type: file
+    path: _data/bestsellers.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Section Heading
+      - name: subheading
+        type: text
+        label: Section Subheading
+      - name: items
+        type: object
+        label: Flavors
+        list: true
+        fields:
+          - name: name
+            type: string
+            label: Name
+          - name: description
+            type: text
+            label: Description
+          - name: image
+            type: image
+            label: Image
+          - name: alt
+            type: string
+            label: Alt Text
+
+  - name: menu
+    label: Full Menu
+    type: file
+    path: _data/menu.json
+    format: json
+    fields:
+      - name: note
+        type: text
+        label: Note
+      - name: order_url
+        type: string
+        label: Order URL
+      - name: flavors
+        type: object
+        label: Flavors
+        list: true
+        fields:
+          - name: name
+            type: string
+            label: Name
+          - name: description
+            type: text
+            label: Description
+          - name: image
+            type: image
+            label: Image
+          - name: alt
+            type: string
+            label: Alt Text
+          - name: category
+            type: select
+            label: Category
+            options:
+              - sweet
+              - caramel
+              - savory
+              - nutty
+              - chocolate
+          - name: seasonal
+            type: boolean
+            label: Seasonal
+
+  - name: sizes
+    label: Sizes & Pricing
+    type: file
+    path: _data/sizes.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: cta_label
+        type: string
+        label: CTA Label
+      - name: cta_url
+        type: string
+        label: CTA URL
+      - name: items
+        type: object
+        label: Sizes
+        list: true
+        fields:
+          - name: name
+            type: string
+            label: Name
+          - name: volume
+            type: string
+            label: Volume
+          - name: description
+            type: text
+            label: Description
+          - name: image
+            type: image
+            label: Image
+
+  - name: gifts
+    label: Gifts & Events
+    type: file
+    path: _data/gifts.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: items
+        type: object
+        label: Cards
+        list: true
+        fields:
+          - name: title
+            type: string
+            label: Title
+          - name: description
+            type: text
+            label: Description
+          - name: link_label
+            type: string
+            label: Link Text
+          - name: link_url
+            type: string
+            label: Link URL
+          - name: link_external
+            type: boolean
+            label: External Link
+
+  - name: story
+    label: Our Story
+    type: file
+    path: _data/story.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: paragraphs
+        type: text
+        label: Paragraphs
+        list: true
+      - name: points
+        type: string
+        label: Bullet Points
+        list: true
+      - name: images
+        type: object
+        label: Images
+        list: true
+        fields:
+          - name: src
+            type: image
+            label: Image
+          - name: alt
+            type: string
+            label: Alt Text
+
+  - name: reviews
+    label: Customer Reviews
+    type: file
+    path: _data/reviews.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: cta_label
+        type: string
+        label: CTA Label
+      - name: cta_url
+        type: string
+        label: CTA URL
+      - name: items
+        type: object
+        label: Reviews
+        list: true
+        fields:
+          - name: quote
+            type: text
+            label: Quote
+          - name: author
+            type: string
+            label: Author
+          - name: stars
+            type: number
+            label: Stars
+
+  - name: faq
+    label: FAQ
+    type: file
+    path: _data/faq.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: allergy_note
+        type: object
+        label: Allergy Note
+        fields:
+          - name: title
+            type: string
+            label: Title
+          - name: text
+            type: text
+            label: Text
+      - name: items
+        type: object
+        label: Questions
+        list: true
+        fields:
+          - name: question
+            type: string
+            label: Question
+          - name: answer
+            type: text
+            label: Answer
+
+  - name: visit
+    label: Visit Us
+    type: file
+    path: _data/visit.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: address
+        type: string
+        label: Address
+      - name: phone
+        type: string
+        label: Phone
+      - name: hours
+        type: string
+        label: Hours
+      - name: maps_link
+        type: string
+        label: Maps Link
+      - name: directions_label
+        type: string
+        label: Directions Button
+      - name: call_label
+        type: string
+        label: Call Button
+      - name: map_embed_url
+        type: string
+        label: Map Embed URL
+
+  - name: footer
+    label: Footer
+    type: file
+    path: _data/footer.json
+    format: json
+    fields:
+      - name: brand_text
+        type: text
+        label: Brand Text
+      - name: nav_heading
+        type: string
+        label: Nav Heading
+      - name: nav_links
+        type: object
+        label: Nav Links
+        list: true
+        fields:
+          - name: label
+            type: string
+            label: Label
+          - name: href
+            type: string
+            label: URL
+      - name: contact_heading
+        type: string
+        label: Contact Heading
+      - name: address
+        type: string
+        label: Address
+      - name: phone
+        type: string
+        label: Phone
+      - name: hours
+        type: string
+        label: Hours
+      - name: social_heading
+        type: string
+        label: Social Heading
+      - name: social_links
+        type: object
+        label: Social Links
+        list: true
+        fields:
+          - name: label
+            type: string
+            label: Platform
+          - name: url
+            type: string
+            label: URL
+      - name: copyright
+        type: string
+        label: Copyright
+
+  - name: feed
+    label: Social Feed
+    type: file
+    path: _data/feed.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: cta
+        type: object
+        label: Buttons
+        list: true
+        fields:
+          - name: label
+            type: string
+            label: Label
+          - name: url
+            type: string
+            label: URL
+          - name: style
+            type: string
+            label: Style
