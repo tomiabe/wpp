@@ -426,6 +426,15 @@ content:
       - name: copyright
         type: string
         label: Copyright
+      - name: made_by_label
+        type: string
+        label: Made By Label
+      - name: made_by_name
+        type: string
+        label: Made By Name
+      - name: made_by_url
+        type: string
+        label: Made By URL
 
   - name: feed
     label: Social Feed

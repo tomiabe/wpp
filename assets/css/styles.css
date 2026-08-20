@@ -111,6 +111,16 @@ img {
   padding: 0 24px;
 }
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
 .icon {
   width: 24px;
   height: 24px;
@@ -876,12 +886,15 @@ img {
 
 .reviews__cta .link {
   color: var(--yellow);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--yellow);
+  text-underline-offset: 2px;
   font-weight: 700;
 }
 
 .reviews__cta .link:hover {
   color: var(--yellow);
+  text-decoration-color: var(--yellow);
 }
 
 @media (max-width: 860px) {
