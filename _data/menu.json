@@ -513,6 +513,54 @@
       "alt": "Valentine Mix popcorn",
       "category": "chocolate",
       "seasonal": true
+    },
+    {
+      "name": "Banana Pudding",
+      "description": "Creamy banana pudding flavor, just like grandma made.",
+      "image": "assets/img/flavors/banana-pudding.webp",
+      "alt": "Banana Pudding popcorn",
+      "category": "sweet",
+      "seasonal": false
+    },
+    {
+      "name": "Cherries and Cream",
+      "description": "Sweet cherries blended with smooth, creamy goodness.",
+      "image": "assets/img/flavors/cherries-and-cream.webp",
+      "alt": "Cherries and Cream popcorn",
+      "category": "sweet",
+      "seasonal": false
+    },
+    {
+      "name": "Christmas Mix",
+      "description": "Festive holiday flavors — peppermint, cinnamon, and joy.",
+      "image": "assets/img/flavors/christmas-mix.webp",
+      "alt": "Christmas Mix popcorn",
+      "category": "sweet",
+      "seasonal": true
+    },
+    {
+      "name": "Easter Mix",
+      "description": "Springtime sweetness in every pastel-colored bite.",
+      "image": "assets/img/flavors/easter-mix.webp",
+      "alt": "Easter Mix popcorn",
+      "category": "sweet",
+      "seasonal": true
+    },
+    {
+      "name": "Peppermint",
+      "description": "Cool, crisp peppermint — a refreshing holiday favorite.",
+      "image": "assets/img/flavors/peppermint.webp",
+      "alt": "Peppermint popcorn",
+      "category": "sweet",
+      "seasonal": true
+    },
+    {
+      "name": "Peanut Buttery Chocolate Drizzle",
+      "description": "Rich peanut butter and chocolate drizzled over crunchy kernels.",
+      "image": "assets/img/flavors/peanut-buttery-chocolate-drizzle.webp",
+      "alt": "Peanut Buttery Chocolate Drizzle popcorn",
+      "category": "chocolate",
+      "seasonal": false
     }
   ]
 }
