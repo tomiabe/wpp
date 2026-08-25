@@ -166,11 +166,16 @@ content:
             type: select
             label: Category
             options:
-              - sweet
-              - caramel
-              - savory
-              - nutty
-              - chocolate
+              - value: sweet
+                label: Sweet & Fruity
+              - value: caramel
+                label: Caramel
+              - value: savory
+                label: Savory & Cheesy
+              - value: nutty
+                label: Nutty & Toffee
+              - value: chocolate
+                label: Chocolate & Specialty
           - name: seasonal
             type: boolean
             label: Seasonal
