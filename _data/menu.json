@@ -143,8 +143,8 @@
       "description": "Celebration in a bag — sweet frosting and sprinkles.",
       "image": "/assets/img/flavors/birthday-cake.webp",
       "alt": "Birthday Cake popcorn",
-      "category": "sweet",
-      "seasonal": false
+      "category": "chocolate",
+      "seasonal": true
     },
     {
       "name": "Red Cinnamon",
