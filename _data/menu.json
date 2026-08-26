@@ -528,7 +528,7 @@
       "image": "/assets/img/flavors/cherries-and-cream.webp",
       "alt": "Cherries and Cream popcorn",
       "category": "chocolate",
-      "seasonal": true
+      "seasonal": false
     },
     {
       "name": "Christmas Mix",
