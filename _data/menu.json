@@ -136,7 +136,7 @@
       "image": "/assets/img/flavors/cherries-and-cream.webp",
       "alt": "Cherries and Cream popcorn",
       "category": "sweet",
-      "seasonal": false
+      "seasonal": true
     },
     {
       "name": "Birthday Cake",
