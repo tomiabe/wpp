@@ -519,16 +519,16 @@
       "description": "Creamy banana pudding flavor, just like grandma made.",
       "image": "/assets/img/flavors/banana-pudding.webp",
       "alt": "Banana Pudding popcorn",
-      "category": "sweet",
-      "seasonal": false
+      "category": "chocolate",
+      "seasonal": true
     },
     {
       "name": "Cherries and Cream",
       "description": "Sweet cherries blended with smooth, creamy goodness.",
       "image": "/assets/img/flavors/cherries-and-cream.webp",
       "alt": "Cherries and Cream popcorn",
-      "category": "sweet",
-      "seasonal": false
+      "category": "chocolate",
+      "seasonal": true
     },
     {
       "name": "Christmas Mix",
