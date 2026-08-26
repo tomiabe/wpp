@@ -488,7 +488,7 @@
       "image": "/assets/img/flavors/july-4th-mix.webp",
       "alt": "July 4th Mix popcorn",
       "category": "sweet",
-      "seasonal": false
+      "seasonal": true
     },
     {
       "name": "Halloween Mix",
