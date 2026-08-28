@@ -12,7 +12,7 @@
     {
       "name": "Pink Cotton Candy",
       "description": "Fluffy pink and candy sweet, like a carnival in a bag.",
-      "image": "assets/img/flavors/pink-cotton-candy.webp",
+      "image": "/assets/img/flavors/pink-cotton-candy.webp",
       "alt": "Pink Cotton Candy popcorn",
       "category": "sweet",
       "seasonal": false
@@ -20,7 +20,7 @@
     {
       "name": "Pina Colada",
       "description": "Tropical coconut and pineapple with a sweet, sunny crunch.",
-      "image": "assets/img/flavors/pina-colada.webp",
+      "image": "/assets/img/flavors/pina-colada.webp",
       "alt": "Pina Colada popcorn",
       "category": "sweet",
       "seasonal": false
@@ -28,7 +28,7 @@
     {
       "name": "Orange",
       "description": "Bright and tangy citrus with a candied finish.",
-      "image": "assets/img/flavors/orange.webp",
+      "image": "/assets/img/flavors/orange.webp",
       "alt": "Orange popcorn",
       "category": "sweet",
       "seasonal": false
@@ -36,7 +36,7 @@
     {
       "name": "Watermelon",
       "description": "Juicy watermelon sweetness in every crunchy bite.",
-      "image": "assets/img/flavors/watermelon.webp",
+      "image": "/assets/img/flavors/watermelon.webp",
       "alt": "Watermelon popcorn",
       "category": "sweet",
       "seasonal": false
@@ -44,7 +44,7 @@
     {
       "name": "Vanilla",
       "description": "Creamy, mellow, and gently sweet. A soft favorite.",
-      "image": "assets/img/flavors/vanilla.webp",
+      "image": "/assets/img/flavors/vanilla.webp",
       "alt": "Vanilla popcorn",
       "category": "sweet",
       "seasonal": false
@@ -52,7 +52,7 @@
     {
       "name": "Strawberry",
       "description": "Sweet berry flavor with a fresh, fruity pop.",
-      "image": "assets/img/flavors/strawberry.webp",
+      "image": "/assets/img/flavors/strawberry.webp",
       "alt": "Strawberry popcorn",
       "category": "sweet",
       "seasonal": false
@@ -60,7 +60,7 @@
     {
       "name": "Cherry",
       "description": "Bold cherry candy taste with a cheery crunch.",
-      "image": "assets/img/flavors/cherry.webp",
+      "image": "/assets/img/flavors/cherry.webp",
       "alt": "Cherry popcorn",
       "category": "sweet",
       "seasonal": false
@@ -68,7 +68,7 @@
     {
       "name": "Blue Raspberry",
       "description": "Vibrant, tart-sweet blue raspberry candy flavor.",
-      "image": "assets/img/flavors/blue-raspberry.webp",
+      "image": "/assets/img/flavors/blue-raspberry.webp",
       "alt": "Blue Raspberry popcorn",
       "category": "sweet",
       "seasonal": false
@@ -76,7 +76,7 @@
     {
       "name": "Key Lime",
       "description": "Zesty lime with a tangy, sweet snap.",
-      "image": "assets/img/flavors/key-lime.webp",
+      "image": "/assets/img/flavors/key-lime.webp",
       "alt": "Key Lime popcorn",
       "category": "sweet",
       "seasonal": false
@@ -84,7 +84,7 @@
     {
       "name": "Green Apple",
       "description": "Crisp apple tartness wrapped in candy sweetness.",
-      "image": "assets/img/flavors/green-apple.webp",
+      "image": "/assets/img/flavors/green-apple.webp",
       "alt": "Green Apple popcorn",
       "category": "sweet",
       "seasonal": false
@@ -92,7 +92,7 @@
     {
       "name": "Grape",
       "description": "Classic grape soda candy flavor, bright and fun.",
-      "image": "assets/img/flavors/grape.webp",
+      "image": "/assets/img/flavors/grape.webp",
       "alt": "Grape popcorn",
       "category": "sweet",
       "seasonal": false
@@ -100,7 +100,7 @@
     {
       "name": "Banana",
       "description": "Sweet, ripe banana flavor in every bite.",
-      "image": "assets/img/flavors/banana.webp",
+      "image": "/assets/img/flavors/banana.webp",
       "alt": "Banana popcorn",
       "category": "sweet",
       "seasonal": false
@@ -108,7 +108,7 @@
     {
       "name": "Blackberry",
       "description": "Jammy blackberry sweetness with a fruity crunch.",
-      "image": "assets/img/flavors/blackberry.webp",
+      "image": "/assets/img/flavors/blackberry.webp",
       "alt": "Blackberry popcorn",
       "category": "sweet",
       "seasonal": false
@@ -116,7 +116,7 @@
     {
       "name": "Blueberry",
       "description": "Sweet blueberry flavor, like fresh-picked berries.",
-      "image": "assets/img/flavors/blueberry.webp",
+      "image": "/assets/img/flavors/blueberry.webp",
       "alt": "Blueberry popcorn",
       "category": "sweet",
       "seasonal": false
@@ -124,7 +124,7 @@
     {
       "name": "Cake Batter",
       "description": "Sweet vanilla cake batter in kernel form.",
-      "image": "assets/img/flavors/cake-batter.webp",
+      "image": "/assets/img/flavors/cake-batter.webp",
       "alt": "Cake Batter popcorn",
       "category": "sweet",
       "seasonal": false
@@ -132,7 +132,7 @@
     {
       "name": "Blue Bubblegum",
       "description": "Bold bubblegum sweetness with a pop of fun.",
-      "image": "assets/img/flavors/blue-bubblegum.webp",
+      "image": "/assets/img/flavors/blue-bubblegum.webp",
       "alt": "Blue Bubblegum popcorn",
       "category": "sweet",
       "seasonal": false
@@ -140,23 +140,23 @@
     {
       "name": "Cherries and Cream",
       "description": "Sweet cherry candy meets creamy vanilla.",
-      "image": "assets/img/flavors/cherries-and-cream.webp",
+      "image": "/assets/img/flavors/cherries-and-cream.webp",
       "alt": "Cherries and Cream popcorn",
       "category": "sweet",
-      "seasonal": false
+      "seasonal": true
     },
     {
       "name": "Birthday Cake",
       "description": "Celebration in a bag — sweet frosting and sprinkles.",
-      "image": "assets/img/flavors/birthday-cake.webp",
+      "image": "/assets/img/flavors/birthday-cake.webp",
       "alt": "Birthday Cake popcorn",
-      "category": "sweet",
-      "seasonal": false
+      "category": "chocolate",
+      "seasonal": true
     },
     {
       "name": "Red Cinnamon",
       "description": "Warm cinnamon candy with a sweet red crunch.",
-      "image": "assets/img/flavors/red-cinnamon.webp",
+      "image": "/assets/img/flavors/red-cinnamon.webp",
       "alt": "Red Cinnamon popcorn",
       "category": "sweet",
       "seasonal": false
@@ -164,7 +164,7 @@
     {
       "name": "Marshmallow",
       "description": "Soft, sweet marshmallow flavor — available in fall.",
-      "image": "assets/img/flavors/marshmallow.webp",
+      "image": "/assets/img/flavors/marshmallow.webp",
       "alt": "Marshmallow popcorn, seasonal",
       "category": "sweet",
       "seasonal": true
@@ -172,7 +172,7 @@
     {
       "name": "Pumpkin Spice",
       "description": "Classic fall spice blend with a buttery crunch.",
-      "image": "assets/img/flavors/pumpkin-spice.webp",
+      "image": "/assets/img/flavors/pumpkin-spice.webp",
       "alt": "Pumpkin Spice popcorn, seasonal",
       "category": "sweet",
       "seasonal": true
@@ -180,7 +180,7 @@
     {
       "name": "Plain",
       "description": "Fresh, buttery, and never boring. The perfect base.",
-      "image": "assets/img/flavors/plain.webp",
+      "image": "/assets/img/flavors/plain.webp",
       "alt": "Plain popcorn",
       "category": "savory",
       "seasonal": false
@@ -188,7 +188,7 @@
     {
       "name": "Ranch",
       "description": "Herby, tangy ranch on a light, crisp crunch.",
-      "image": "assets/img/flavors/ranch.webp",
+      "image": "/assets/img/flavors/ranch.webp",
       "alt": "Ranch popcorn",
       "category": "savory",
       "seasonal": false
@@ -196,7 +196,7 @@
     {
       "name": "White Cheddar",
       "description": "Sharp, cheesy white cheddar on a light, crisp crunch.",
-      "image": "assets/img/flavors/white-cheddar.webp",
+      "image": "/assets/img/flavors/white-cheddar.webp",
       "alt": "White Cheddar popcorn",
       "category": "savory",
       "seasonal": false
@@ -204,7 +204,7 @@
     {
       "name": "Cheese",
       "description": "Bold cheddar cheese with a satisfying salty kick.",
-      "image": "assets/img/flavors/cheese.webp",
+      "image": "/assets/img/flavors/cheese.webp",
       "alt": "Cheese popcorn",
       "category": "savory",
       "seasonal": false
@@ -212,7 +212,7 @@
     {
       "name": "Salt & Vinegar",
       "description": "Tart, salty, and seriously snackable.",
-      "image": "assets/img/flavors/salt-and-vinegar.webp",
+      "image": "/assets/img/flavors/salt-and-vinegar.webp",
       "alt": "Salt and Vinegar popcorn",
       "category": "savory",
       "seasonal": false
@@ -220,7 +220,7 @@
     {
       "name": "Extra Butter Chicago Style",
       "description": "Chicago's favorite: heavy butter, extra salt.",
-      "image": "assets/img/flavors/extra-butter-chicago-style.webp",
+      "image": "/assets/img/flavors/extra-butter-chicago-style.webp",
       "alt": "Extra Butter Chicago Style popcorn",
       "category": "savory",
       "seasonal": false
@@ -228,7 +228,7 @@
     {
       "name": "Bacon Cheddar",
       "description": "Smoky bacon meets sharp cheddar in every bite.",
-      "image": "assets/img/flavors/bacon-cheddar.webp",
+      "image": "/assets/img/flavors/bacon-cheddar.webp",
       "alt": "Bacon Cheddar popcorn",
       "category": "savory",
       "seasonal": false
@@ -236,7 +236,7 @@
     {
       "name": "Buffalo Wild Wing",
       "description": "Spicy buffalo sauce with a tangy kick.",
-      "image": "assets/img/flavors/buffalo-wild-wing.webp",
+      "image": "/assets/img/flavors/buffalo-wild-wing.webp",
       "alt": "Buffalo Wild Wing popcorn",
       "category": "savory",
       "seasonal": false
@@ -244,7 +244,7 @@
     {
       "name": "Cheesy Cheese",
       "description": "Double the cheese, double the savory crunch.",
-      "image": "assets/img/flavors/cheesy-cheese.webp",
+      "image": "/assets/img/flavors/cheesy-cheese.webp",
       "alt": "Cheesy Cheese popcorn",
       "category": "savory",
       "seasonal": false
@@ -252,7 +252,7 @@
     {
       "name": "Chili Con Queso",
       "description": "Creamy queso with a mild chili warmth.",
-      "image": "assets/img/flavors/chili-con-queso.webp",
+      "image": "/assets/img/flavors/chili-con-queso.webp",
       "alt": "Chili Con Queso popcorn",
       "category": "savory",
       "seasonal": false
@@ -260,7 +260,7 @@
     {
       "name": "Dill Pickle",
       "description": "Tangy, salty dill pickle on a crisp crunch.",
-      "image": "assets/img/flavors/dill-pickle.webp",
+      "image": "/assets/img/flavors/dill-pickle.webp",
       "alt": "Dill Pickle popcorn",
       "category": "savory",
       "seasonal": false
@@ -268,7 +268,7 @@
     {
       "name": "Garlic Parmesan",
       "description": "Rich garlic and nutty parmesan, perfectly seasoned.",
-      "image": "assets/img/flavors/garlic-parmesan.webp",
+      "image": "/assets/img/flavors/garlic-parmesan.webp",
       "alt": "Garlic Parmesan popcorn",
       "category": "savory",
       "seasonal": false
@@ -276,7 +276,7 @@
     {
       "name": "Jalapeno Ranch",
       "description": "Cool ranch with a jalapeno kick.",
-      "image": "assets/img/flavors/jalapeno-ranch.webp",
+      "image": "/assets/img/flavors/jalapeno-ranch.webp",
       "alt": "Jalapeno Ranch popcorn",
       "category": "savory",
       "seasonal": false
@@ -284,7 +284,7 @@
     {
       "name": "Movie Theatre Butter",
       "description": "That classic buttery theatre taste, at home.",
-      "image": "assets/img/flavors/movie-theatre-butter.webp",
+      "image": "/assets/img/flavors/movie-theatre-butter.webp",
       "alt": "Movie Theatre Butter popcorn",
       "category": "savory",
       "seasonal": false
@@ -292,7 +292,7 @@
     {
       "name": "Spicy Hot Cheese",
       "description": "Cheese with real heat — not for the faint of heart.",
-      "image": "assets/img/flavors/spicy-hot-cheese.webp",
+      "image": "/assets/img/flavors/spicy-hot-cheese.webp",
       "alt": "Spicy Hot Cheese popcorn",
       "category": "savory",
       "seasonal": false
@@ -300,7 +300,7 @@
     {
       "name": "Extra Buttery Chicago Style",
       "description": "Even more butter than the original Chicago Style.",
-      "image": "assets/img/flavors/extra-buttery-chicago-style.webp",
+      "image": "/assets/img/flavors/extra-buttery-chicago-style.webp",
       "alt": "Extra Buttery Chicago Style popcorn",
       "category": "savory",
       "seasonal": false
@@ -308,7 +308,7 @@
     {
       "name": "Southwest Jalapeno",
       "description": "Bold southwestern spice with a jalapeno finish.",
-      "image": "assets/img/flavors/southwest-jalapeno.webp",
+      "image": "/assets/img/flavors/southwest-jalapeno.webp",
       "alt": "Southwest Jalapeno popcorn",
       "category": "savory",
       "seasonal": false
@@ -316,7 +316,7 @@
     {
       "name": "Salty Caramel",
       "description": "Rich caramel with a salted finish.",
-      "image": "assets/img/flavors/salty-caramel.webp",
+      "image": "/assets/img/flavors/salty-caramel.webp",
       "alt": "Salty Caramel popcorn",
       "category": "caramel",
       "seasonal": false
@@ -324,7 +324,7 @@
     {
       "name": "Extra Buttery Caramel",
       "description": "Gooey caramel loaded with extra butter.",
-      "image": "assets/img/flavors/extra-buttery-caramel.webp",
+      "image": "/assets/img/flavors/extra-buttery-caramel.webp",
       "alt": "Extra Buttery Caramel popcorn",
       "category": "caramel",
       "seasonal": false
@@ -332,7 +332,7 @@
     {
       "name": "Caramel Drizzle",
       "description": "Sweet caramel with a silky chocolate drizzle.",
-      "image": "assets/img/flavors/caramel-drizzle.webp",
+      "image": "/assets/img/flavors/caramel-drizzle.webp",
       "alt": "Caramel Drizzle popcorn",
       "category": "caramel",
       "seasonal": false
@@ -340,7 +340,7 @@
     {
       "name": "Caramel",
       "description": "Classic caramel — sweet, buttery, and timeless.",
-      "image": "assets/img/flavors/caramel.webp",
+      "image": "/assets/img/flavors/caramel.webp",
       "alt": "Caramel popcorn",
       "category": "caramel",
       "seasonal": false
@@ -348,7 +348,7 @@
     {
       "name": "Kettle",
       "description": "Old-fashioned kettle corn — sweet and salty done right.",
-      "image": "assets/img/flavors/kettle.webp",
+      "image": "/assets/img/flavors/kettle.webp",
       "alt": "Kettle corn",
       "category": "caramel",
       "seasonal": false
@@ -356,7 +356,7 @@
     {
       "name": "Salty Caramel Drizzle",
       "description": "Dark chocolate drizzled over salty caramel.",
-      "image": "assets/img/flavors/salty-caramel-drizzle.webp",
+      "image": "/assets/img/flavors/salty-caramel-drizzle.webp",
       "alt": "Salty Caramel Drizzle popcorn",
       "category": "caramel",
       "seasonal": false
@@ -364,7 +364,7 @@
     {
       "name": "Caramel Cashew",
       "description": "Caramel-coated kernels with crunchy cashews.",
-      "image": "assets/img/flavors/caramel-cashew.webp",
+      "image": "/assets/img/flavors/caramel-cashew.webp",
       "alt": "Caramel Cashew popcorn",
       "category": "nutty",
       "seasonal": false
@@ -372,7 +372,7 @@
     {
       "name": "Caramel Peanut",
       "description": "Caramel-coated kernels mixed with crunchy peanuts.",
-      "image": "assets/img/flavors/caramel-peanut.webp",
+      "image": "/assets/img/flavors/caramel-peanut.webp",
       "alt": "Caramel Peanut popcorn",
       "category": "nutty",
       "seasonal": false
@@ -380,7 +380,7 @@
     {
       "name": "Caramel Pecan",
       "description": "Rich caramel with buttery, toasted pecans.",
-      "image": "assets/img/flavors/caramel-pecan.webp",
+      "image": "/assets/img/flavors/caramel-pecan.webp",
       "alt": "Caramel Pecan popcorn",
       "category": "nutty",
       "seasonal": false
@@ -388,7 +388,7 @@
     {
       "name": "Toffee Almond",
       "description": "Buttery toffee with toasted almonds in every crunch.",
-      "image": "assets/img/flavors/toffee-almond.webp",
+      "image": "/assets/img/flavors/toffee-almond.webp",
       "alt": "Toffee Almond popcorn",
       "category": "nutty",
       "seasonal": false
@@ -396,7 +396,7 @@
     {
       "name": "White Chocolate",
       "description": "Smooth white chocolate over fluffy popcorn.",
-      "image": "assets/img/flavors/white-chocolate.webp",
+      "image": "/assets/img/flavors/white-chocolate.webp",
       "alt": "White Chocolate popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -404,7 +404,7 @@
     {
       "name": "White Chocolate Pretzel",
       "description": "White chocolate with crunchy pretzels and M&Ms.",
-      "image": "assets/img/flavors/white-chocolate-pretzel.webp",
+      "image": "/assets/img/flavors/white-chocolate-pretzel.webp",
       "alt": "White Chocolate Pretzel popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -412,7 +412,7 @@
     {
       "name": "Peanut Butter Chocolate Drizzle",
       "description": "Chocolate and peanut butter, drizzled to perfection.",
-      "image": "assets/img/flavors/peanut-butter-chocolate-drizzle.webp",
+      "image": "/assets/img/flavors/peanut-butter-chocolate-drizzle.webp",
       "alt": "Peanut Butter Chocolate Drizzle popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -420,7 +420,7 @@
     {
       "name": "Hershey's S'mores",
       "description": "Chocolate, marshmallow, and graham — campfire vibes.",
-      "image": "assets/img/flavors/smores.webp",
+      "image": "/assets/img/flavors/smores.webp",
       "alt": "Hershey's S'mores popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -428,7 +428,7 @@
     {
       "name": "Oreo",
       "description": "Cookies and cream with crunchy Oreo pieces.",
-      "image": "assets/img/flavors/oreo.webp",
+      "image": "/assets/img/flavors/oreo.webp",
       "alt": "Oreo popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -436,7 +436,7 @@
     {
       "name": "Turtle",
       "description": "Pecans and milk chocolate over rich caramel.",
-      "image": "assets/img/flavors/turtle.webp",
+      "image": "/assets/img/flavors/turtle.webp",
       "alt": "Turtle popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -444,15 +444,15 @@
     {
       "name": "White Choc Peppermint",
       "description": "Smooth white chocolate with a cool peppermint twist.",
-      "image": "assets/img/flavors/white-choc-peppermint.webp",
+      "image": "/assets/img/flavors/white-choc-peppermint.webp",
       "alt": "White Choc Peppermint popcorn",
       "category": "chocolate",
-      "seasonal": false
+      "seasonal": true
     },
     {
       "name": "Dark Chocolate",
       "description": "Rich, bittersweet dark chocolate coating.",
-      "image": "assets/img/flavors/dark-chocolate.webp",
+      "image": "/assets/img/flavors/dark-chocolate.webp",
       "alt": "Dark Chocolate popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -460,7 +460,7 @@
     {
       "name": "Chicago Mix",
       "description": "The classic combo of caramel and cheese.",
-      "image": "assets/img/flavors/chicago-mix.webp",
+      "image": "/assets/img/flavors/chicago-mix.webp",
       "alt": "Chicago Mix popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -468,7 +468,7 @@
     {
       "name": "Katy Mix",
       "description": "Our signature local mix, only at our Katy shop.",
-      "image": "assets/img/flavors/katy-mix.webp",
+      "image": "/assets/img/flavors/katy-mix.webp",
       "alt": "Katy Mix popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -476,7 +476,7 @@
     {
       "name": "Denver Mix",
       "description": "A mile-high mix of caramel and cheddar.",
-      "image": "assets/img/flavors/denver-mix.webp",
+      "image": "/assets/img/flavors/denver-mix.webp",
       "alt": "Denver Mix popcorn",
       "category": "chocolate",
       "seasonal": false
@@ -484,7 +484,7 @@
     {
       "name": "Confetti",
       "description": "Rainbow colors with a sweet candy coating.",
-      "image": "assets/img/flavors/confetti.webp",
+      "image": "/assets/img/flavors/confetti.webp",
       "alt": "Confetti popcorn",
       "category": "sweet",
       "seasonal": false
@@ -492,15 +492,15 @@
     {
       "name": "July 4th Mix",
       "description": "Red, white, and blue — a patriotic blend of flavors.",
-      "image": "assets/img/flavors/july-4th-mix.webp",
+      "image": "/assets/img/flavors/july-4th-mix.webp",
       "alt": "July 4th Mix popcorn",
       "category": "sweet",
-      "seasonal": false
+      "seasonal": true
     },
     {
       "name": "Halloween Mix",
       "description": "A spooky mix of candy corn colors and sweet Halloween treats.",
-      "image": "assets/img/flavors/halloween-mix.webp",
+      "image": "/assets/img/flavors/halloween-mix.webp",
       "alt": "Halloween Mix popcorn",
       "category": "sweet",
       "seasonal": true
@@ -508,7 +508,7 @@
     {
       "name": "Fall Mix",
       "description": "Warm autumn flavors — caramel, cinnamon, and cozy crunch.",
-      "image": "assets/img/flavors/fall-mix.webp",
+      "image": "/assets/img/flavors/fall-mix.webp",
       "alt": "Fall Mix popcorn",
       "category": "caramel",
       "seasonal": true
@@ -516,31 +516,31 @@
     {
       "name": "Valentine Mix",
       "description": "Sweet hearts and chocolate — a love letter in every bite.",
-      "image": "assets/img/flavors/valentine-mix.webp",
+      "image": "/assets/img/flavors/valentine-mix.webp",
       "alt": "Valentine Mix popcorn",
-      "category": "chocolate",
+      "category": "sweet",
       "seasonal": true
     },
     {
       "name": "Banana Pudding",
       "description": "Creamy banana pudding flavor, just like grandma made.",
-      "image": "assets/img/flavors/banana-pudding.webp",
+      "image": "/assets/img/flavors/banana-pudding.webp",
       "alt": "Banana Pudding popcorn",
-      "category": "sweet",
-      "seasonal": false
+      "category": "chocolate",
+      "seasonal": true
     },
     {
       "name": "Cherries and Cream",
       "description": "Sweet cherries blended with smooth, creamy goodness.",
-      "image": "assets/img/flavors/cherries-and-cream.webp",
+      "image": "/assets/img/flavors/cherries-and-cream.webp",
       "alt": "Cherries and Cream popcorn",
-      "category": "sweet",
+      "category": "chocolate",
       "seasonal": false
     },
     {
       "name": "Christmas Mix",
       "description": "Festive holiday flavors — peppermint, cinnamon, and joy.",
-      "image": "assets/img/flavors/christmas-mix.webp",
+      "image": "/assets/img/flavors/christmas-mix.webp",
       "alt": "Christmas Mix popcorn",
       "category": "sweet",
       "seasonal": true
@@ -548,7 +548,7 @@
     {
       "name": "Easter Mix",
       "description": "Springtime sweetness in every pastel-colored bite.",
-      "image": "assets/img/flavors/easter-mix.webp",
+      "image": "/assets/img/flavors/easter-mix.webp",
       "alt": "Easter Mix popcorn",
       "category": "sweet",
       "seasonal": true
@@ -556,7 +556,7 @@
     {
       "name": "Peppermint",
       "description": "Cool, crisp peppermint — a refreshing holiday favorite.",
-      "image": "assets/img/flavors/peppermint.webp",
+      "image": "/assets/img/flavors/peppermint.webp",
       "alt": "Peppermint popcorn",
       "category": "sweet",
       "seasonal": true
@@ -564,7 +564,7 @@
     {
       "name": "Peanut Buttery Chocolate Drizzle",
       "description": "Rich peanut butter and chocolate drizzled over crunchy kernels.",
-      "image": "assets/img/flavors/peanut-buttery-chocolate-drizzle.webp",
+      "image": "/assets/img/flavors/peanut-buttery-chocolate-drizzle.webp",
       "alt": "Peanut Buttery Chocolate Drizzle popcorn",
       "category": "chocolate",
       "seasonal": false
