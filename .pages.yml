@@ -145,6 +145,25 @@ content:
       - name: order_url
         type: string
         label: Order URL
+      - name: category_order_urls
+        type: object
+        label: Category Order URLs
+        fields:
+          - name: sweet
+            type: string
+            label: Sweet & Fruity URL
+          - name: caramel
+            type: string
+            label: Caramel URL
+          - name: savory
+            type: string
+            label: Savory & Cheesy URL
+          - name: nutty
+            type: string
+            label: Nutty & Toffee URL
+          - name: chocolate
+            type: string
+            label: Chocolate & Specialty URL
       - name: flavors
         type: object
         label: Flavors

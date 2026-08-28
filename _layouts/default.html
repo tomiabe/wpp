@@ -183,6 +183,8 @@
 
         <div class="bestsellers">
           {% for item in site.data.bestsellers.items %}
+          {% assign matching_flavor = site.data.menu.flavors | where: "name", item.name | first %}
+          {% assign item_order_url = site.data.menu.category_order_urls[matching_flavor.category] | default: item.order_url | default: site.data.menu.order_url %}
           <article class="flavor-card flavor-card--feature">
             <div class="flavor-card__media">
               <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
@@ -191,7 +193,7 @@
             <div class="flavor-card__body">
               <h3>{{ item.name }}</h3>
               <p>{{ item.description }}</p>
-              <a class="link" href="{{ item.order_url }}" target="_blank" rel="noopener">
+              <a class="link" href="{{ item_order_url }}" target="_blank" rel="noopener">
                 Order this flavor
                 <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </a>
@@ -208,6 +210,7 @@
 
         <div class="flavor-grid" id="flavor-grid">
           {% for flavor in site.data.menu.flavors %}
+          {% assign flavor_order_url = site.data.menu.category_order_urls[flavor.category] | default: site.data.menu.order_url %}
           <article class="flavor-card" data-category="{{ flavor.category }}">
             <div class="flavor-card__media">
               <img src="{{ flavor.image }}" alt="{{ flavor.alt }}" loading="lazy">
@@ -215,7 +218,7 @@
             <div class="flavor-card__body">
               <h3>{{ flavor.name }}{% if flavor.seasonal %} <span class="flavor-card__seasonal">Seasonal</span>{% endif %}</h3>
               <p>{{ flavor.description }}</p>
-              <a class="link" href="{{ site.data.menu.order_url }}" target="_blank" rel="noopener">Order <span class="sr-only">{{ flavor.name }}</span></a>
+              <a class="link" href="{{ flavor_order_url }}" target="_blank" rel="noopener">Order <span class="sr-only">{{ flavor.name }}</span></a>
             </div>
           </article>
           {% endfor %}

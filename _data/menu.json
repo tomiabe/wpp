@@ -1,6 +1,13 @@
 {
   "note": "Seasonal and limited edition flavors rotate all year.",
   "order_url": "https://whatspoppinpopcorn.zenfoody.com/",
+  "category_order_urls": {
+    "sweet": "https://whatspoppinpopcorn.zenfoody.com/ui/menu#6920ddfbf97e3b8f96e86fc6",
+    "caramel": "https://whatspoppinpopcorn.zenfoody.com/ui/menu#6920ddfbf97e3b8f96e86fc6",
+    "savory": "https://whatspoppinpopcorn.zenfoody.com/ui/menu#6920ddfbf97e3b8f96e86fc8",
+    "nutty": "https://whatspoppinpopcorn.zenfoody.com/ui/menu#6920ddfbf97e3b8f96e86fc7",
+    "chocolate": "https://whatspoppinpopcorn.zenfoody.com/ui/menu#6920ddfbf97e3b8f96e86fc9"
+  },
   "flavors": [
     {
       "name": "Pink Cotton Candy",
