@@ -141,6 +141,7 @@
   var form = document.getElementById("event-form");
   var status = document.getElementById("form-status");
   var hForm = document.getElementById("gform-hidden");
+  var honeypot = document.getElementById("f-website");
 
   var planningMap = {
     party: "Party or Event",
@@ -175,6 +176,12 @@
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+
+      // Bots commonly fill the off-screen honeypot; never forward those submissions.
+      if (honeypot && honeypot.value.trim() !== "") {
+        return;
+      }
+
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
