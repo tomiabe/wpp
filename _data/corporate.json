@@ -1,0 +1,44 @@
+{
+  "heading": "Corporate gifts people actually want to receive.",
+  "subheading": "Freshly made in Katy, Texas. Customized for employee appreciation, client thank-yous, home closings, new-resident welcomes, office events, and holidays.",
+  "intro": "Tell us the occasion, quantity, and delivery date. We will help you choose the right popcorn, packaging, message, and next step.",
+  "packages": [
+    {
+      "name": "Employee Appreciation",
+      "description": "Individually packaged popcorn with a card or message for teams, departments, and staff celebrations."
+    },
+    {
+      "name": "Client Thank-You",
+      "description": "Gift boxes or tins for clients, referral partners, milestones, and relationship-building moments."
+    },
+    {
+      "name": "Welcome Home",
+      "description": "A locally made closing or move-in gift with your brand, favorite flavors, and a personal message."
+    },
+    {
+      "name": "Office & Event Drop",
+      "description": "Fresh popcorn prepared for meetings, conferences, open houses, team days, and company events."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Share the details",
+      "description": "Tell us the occasion, quantity, timing, and delivery needs."
+    },
+    {
+      "title": "Choose the experience",
+      "description": "Select flavors, packaging, branding, and a message."
+    },
+    {
+      "title": "Approve the order",
+      "description": "We confirm the quote, timeline, and delivery plan."
+    },
+    {
+      "title": "Make it memorable",
+      "description": "We prepare your order fresh and coordinate pickup or local delivery."
+    }
+  ],
+  "quote_note": "Quotes are customized by quantity, packaging, branding, and delivery needs.",
+  "cta_label": "Plan a corporate order",
+  "cta_url": "#contact"
+}

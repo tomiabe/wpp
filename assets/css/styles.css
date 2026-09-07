@@ -761,6 +761,115 @@ img {
   margin-top: 16px;
 }
 
+/* ---------- Corporate Gifting ---------- */
+
+.corporate {
+  background: var(--cream);
+}
+
+.corporate__intro {
+  max-width: 760px;
+  margin: -20px auto 44px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+}
+
+.corporate__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.corporate__card {
+  background: var(--white);
+  border: var(--border-w) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px 24px;
+}
+
+.corporate__number {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+  background: var(--purple);
+  color: var(--yellow);
+  font-weight: 800;
+}
+
+.corporate__card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.45em;
+}
+
+.corporate__card p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.corporate__steps {
+  margin: 64px auto 0;
+  max-width: 1040px;
+}
+
+.corporate__steps > h3 {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.corporate__steps ol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.corporate__step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.corporate__step-number {
+  display: grid;
+  place-items: center;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--yellow);
+  font-weight: 800;
+}
+
+.corporate__step strong,
+.corporate__step span:last-child {
+  display: block;
+}
+
+.corporate__step span:last-child {
+  margin-top: 4px;
+  color: var(--ink-soft);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.corporate__cta {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.corporate__cta p {
+  margin-bottom: 22px;
+  color: var(--ink-soft);
+}
+
 /* ---------- Story ---------- */
 
 .story__grid {
@@ -1418,6 +1527,11 @@ img {
   .gifts__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .corporate__grid,
+  .corporate__steps ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 860px) {
@@ -1523,6 +1637,11 @@ img {
   }
 
   .gifts__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .corporate__grid,
+  .corporate__steps ol {
     grid-template-columns: 1fr;
   }
 

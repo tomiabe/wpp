@@ -13,7 +13,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.canonical_url }}">
   <meta property="og:title" content="{{ site.tagline }}">
-  <meta property="og:description" content="Gourmet popcorn with 70+ bold flavors, popped fresh daily in Katy, TX. Pickup, delivery, gifts and events.">
+  <meta property="og:description" content="Gourmet popcorn with 70+ bold flavors, popped fresh daily in Katy, TX. Pickup, delivery, gifts, events, and corporate orders.">
   <meta property="og:image" content="{{ site.og_image }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -23,7 +23,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ site.tagline }}">
-  <meta name="twitter:description" content="Gourmet popcorn with 70+ bold flavors, popped fresh daily in Katy, TX. Pickup, delivery, gifts and events.">
+  <meta name="twitter:description" content="Gourmet popcorn with 70+ bold flavors, popped fresh daily in Katy, TX. Pickup, delivery, gifts, events, and corporate orders.">
   <meta name="twitter:image" content="{{ site.og_image }}">
 
   <!-- Favicon -->
@@ -289,6 +289,50 @@
       </div>
     </section>
 
+    <section class="corporate section" id="corporate">
+      <div class="container">
+        <header class="section__head">
+          <h2>{{ site.data.corporate.heading }}</h2>
+          <p>{{ site.data.corporate.subheading }}</p>
+        </header>
+
+        <p class="corporate__intro">{{ site.data.corporate.intro }}</p>
+
+        <div class="corporate__grid">
+          {% for package in site.data.corporate.packages %}
+          <article class="corporate__card">
+            <span class="corporate__number">0{{ forloop.index }}</span>
+            <h3>{{ package.name }}</h3>
+            <p>{{ package.description }}</p>
+          </article>
+          {% endfor %}
+        </div>
+
+        <div class="corporate__steps">
+          <h3>Simple from first conversation to final delivery.</h3>
+          <ol>
+            {% for step in site.data.corporate.steps %}
+            <li class="corporate__step">
+              <span class="corporate__step-number">{{ forloop.index }}</span>
+              <div>
+                <strong>{{ step.title }}</strong>
+                <span>{{ step.description }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+
+        <div class="corporate__cta">
+          <p>{{ site.data.corporate.quote_note }}</p>
+          <a class="btn btn--yellow btn--lg" href="{{ site.data.corporate.cta_url }}">
+            {{ site.data.corporate.cta_label }}
+            <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="story section" id="story">
       <div class="container story__grid">
         <div class="story__media">
@@ -465,6 +509,7 @@
         <div class="contact__intro">
           <h2>Plan a party, event, or gift order</h2>
           <p>Tell us about your event and we will send you a quote. Birthdays, baby showers, corporate treats, and more.</p>
+          <p>For corporate orders, include your estimated quantity, preferred date, packaging or branding needs, and any message you want included.</p>
           <p>Prefer to talk it through? Call us at <a href="{{ site.phone_href }}">{{ site.phone }}</a> or email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
           <ul class="contact__perks">
             <li>

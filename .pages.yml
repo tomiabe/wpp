@@ -298,6 +298,53 @@ content:
             type: string
             label: Alt Text
 
+  - name: corporate
+    label: Corporate Gifting
+    type: file
+    path: _data/corporate.json
+    format: json
+    fields:
+      - name: heading
+        type: string
+        label: Heading
+      - name: subheading
+        type: text
+        label: Subheading
+      - name: intro
+        type: text
+        label: Intro
+      - name: packages
+        type: object
+        label: Packages
+        list: true
+        fields:
+          - name: name
+            type: string
+            label: Package Name
+          - name: description
+            type: text
+            label: Description
+      - name: steps
+        type: object
+        label: Process Steps
+        list: true
+        fields:
+          - name: title
+            type: string
+            label: Step Title
+          - name: description
+            type: text
+            label: Step Description
+      - name: quote_note
+        type: text
+        label: Quote Note
+      - name: cta_label
+        type: string
+        label: CTA Label
+      - name: cta_url
+        type: string
+        label: CTA URL
+
   - name: reviews
     label: Customer Reviews
     type: file
