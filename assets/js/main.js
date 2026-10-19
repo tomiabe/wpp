@@ -150,6 +150,8 @@
     other: "Something else"
   };
 
+  var leadAutomationWebhook = "https://cloud.activepieces.com/api/v1/webhooks/oriKRm5Om8nvfPMWMWFBo";
+
   if (form && status && hForm) {
     var submitBtn = form.querySelector('button[type="submit"]');
     var dismissTimer = null;
@@ -187,13 +189,24 @@
         return;
       }
 
-      document.getElementById("hf-name").value    = document.getElementById("f-name").value.trim();
-      document.getElementById("hf-email").value   = document.getElementById("f-email").value.trim();
-      document.getElementById("hf-phone").value   = document.getElementById("f-phone").value.trim();
-      document.getElementById("hf-type").value     = planningMap[document.getElementById("f-type").value] || "";
-      document.getElementById("hf-date").value     = document.getElementById("f-date").value;
-      document.getElementById("hf-guests").value   = document.getElementById("f-guests").value;
-      document.getElementById("hf-message").value  = document.getElementById("f-message").value.trim();
+      var lead = {
+        name: document.getElementById("f-name").value.trim(),
+        email: document.getElementById("f-email").value.trim(),
+        phone: document.getElementById("f-phone").value.trim(),
+        type: planningMap[document.getElementById("f-type").value] || "",
+        date: document.getElementById("f-date").value,
+        guests: document.getElementById("f-guests").value,
+        message: document.getElementById("f-message").value.trim(),
+        source: "whatspoppinpopcorn.co"
+      };
+
+      document.getElementById("hf-name").value    = lead.name;
+      document.getElementById("hf-email").value   = lead.email;
+      document.getElementById("hf-phone").value   = lead.phone;
+      document.getElementById("hf-type").value    = lead.type;
+      document.getElementById("hf-date").value    = lead.date;
+      document.getElementById("hf-guests").value  = lead.guests;
+      document.getElementById("hf-message").value = lead.message;
 
       status.textContent = "";
       status.classList.remove("is-success", "is-error", "is-fade");
@@ -213,6 +226,17 @@
           showSuccess();
         });
       }
+
+      // Keep Google Forms as the backup while Activepieces handles lead scoring,
+      // CRM storage, and creation of a reviewable Gmail reply draft.
+      fetch(leadAutomationWebhook, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(lead),
+        keepalive: true
+      }).catch(function () {
+        // The Google Form submission below remains the source-of-truth fallback.
+      });
 
       hForm.submit();
     });
