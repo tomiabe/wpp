@@ -241,4 +241,15 @@
       hForm.submit();
     });
   }
+
+  // In-site ordering panel: load its styles and script next to this file.
+  var mainScript = document.querySelector('script[src$="assets/js/main.js"]');
+  var base = mainScript ? mainScript.getAttribute("src").replace(/assets\/js\/main\.js$/, "") : "";
+  var modalCss = document.createElement("link");
+  modalCss.rel = "stylesheet";
+  modalCss.href = base + "assets/css/order-modal.css";
+  document.head.appendChild(modalCss);
+  var modalJs = document.createElement("script");
+  modalJs.src = base + "assets/js/order-modal.js";
+  document.body.appendChild(modalJs);
 })();
