@@ -1,6 +1,57 @@
 (function () {
   "use strict";
 
+  // Smooth scrolling and anchor links, with Lenis handling reduced motion.
+  var lenis = null;
+  if (window.Lenis) {
+    lenis = new window.Lenis({
+      autoRaf: true,
+      anchors: true,
+      respectReducedMotion: true
+    });
+  }
+
+  // Add reveals only when the browser supports them and motion is allowed.
+  var revealPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+  if (!revealPreference.matches && "IntersectionObserver" in window) {
+    var revealTargets = document.querySelectorAll([
+      "main > section",
+      ".hero__inner > *",
+      ".trust__item",
+      "main > section .section__head > *",
+      "main > section article",
+      "main > section .accordion__item",
+      "main > section .corporate__steps li",
+      "main > section .visit__list > li",
+      ".story__copy > *",
+      ".visit__info > *",
+      ".contact__intro > *",
+      ".event-form > *"
+    ].join(","));
+
+    revealTargets.forEach(function (target, index) {
+      target.setAttribute("data-reveal", "");
+      target.style.setProperty("--reveal-delay", Math.min((index % 4) * 70, 210) + "ms");
+    });
+
+    document.documentElement.classList.add("has-reveal");
+    var revealObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.06,
+      rootMargin: "0px 0px -6% 0px"
+    });
+
+    revealTargets.forEach(function (target) {
+      revealObserver.observe(target);
+    });
+  }
+
   var navToggle = document.getElementById("nav-toggle");
   var mainNav = document.getElementById("main-nav");
 
@@ -36,7 +87,11 @@
     toggleToTop();
     var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     toTop.addEventListener("click", function () {
-      window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" });
+      if (lenis) {
+        lenis.scrollTo(0);
+      } else {
+        window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" });
+      }
     });
   }
 
