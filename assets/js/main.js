@@ -16,6 +16,9 @@
   if (!revealPreference.matches && "IntersectionObserver" in window) {
     var revealTargets = document.querySelectorAll([
       "main > section",
+      "main > section h2",
+      "main > section h3",
+      "main > section p",
       ".hero__inner > *",
       ".trust__item",
       "main > section .section__head > *",
